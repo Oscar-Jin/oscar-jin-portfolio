@@ -1,53 +1,82 @@
-/**
- * Layout component that queries for data
- * with Gatsby's useStaticQuery component
- *
- * See: https://www.gatsbyjs.com/docs/use-static-query/
- */
-
+//  ──────────────────────────────────────────────────────────── import ───┐
 import React from "react"
-import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
+import "../styles/tailwind.css"
 
-import Header from "./header"
-import "./layout.css"
+// <───────────────────────────────────────────────────────────────────────┘
 
-const Layout = ({ children }) => {
-  const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
-        }
+//  ─────────────────────────────────────────────────────────── graphql ───┐
+const title = graphql`
+  query SiteTitleQuery {
+    site {
+      siteMetadata {
+        title
       }
     }
-  `)
+  }
+`
+// <───────────────────────────────────────────────────────────────────────┘
+
+//  ───────────────────────────────────────────────────────── menu icon ───┐
+const Menu = () => {
+  return (
+    <>
+      <button className="transition ease-out duration-200 hover:bg-gray-100 hover:opacity-75 rounded-md p-2 md:p-3 ">
+        <svg
+          className="mx-auto w-6 h-6 md:hidden"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="gray"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth={2}
+            d="M4 6h16M4 12h16M4 18h16"
+          />
+        </svg>
+      </button>
+    </>
+  )
+}
+// <───────────────────────────────────────────────────────────────────────┘
+
+//  ───────────────────────────────────────────────────────── component ───┐
+const Layout = ({ children }) => {
+  const data = useStaticQuery(title)
 
   return (
     <>
-      <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
-      <div
-        style={{
-          margin: `0 auto`,
-          maxWidth: 960,
-          padding: `0 1.0875rem 1.45rem`,
-        }}
-      >
-        <main>{children}</main>
-        <footer style={{
-          marginTop: `2rem`
-        }}>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.com">Gatsby</a>
+      <div className="container mx-auto">
+        <header className="border p-2 flex items-center justify-between md:p-5 ">
+          <div className="flex items-center  p-1">
+            <div className="w-4 h-5 border-blue-400 border-l-4 md:w-6 md:h-8"></div>
+            <h1 className="font-semibold text-lg md:text-2xl ">
+              {data.site.siteMetadata.title}
+            </h1>
+          </div>
+          <Menu></Menu>
+          <nav className="hidden md:inline-block">
+            <ul className="flex border">
+              <li>
+                <a href="">About</a>
+              </li>
+              <li>
+                <a href="">Study</a>
+              </li>
+            </ul>
+          </nav>
+        </header>
+        <main className="col-span-3 p-2 border">{children}</main>
+
+        <footer className="border">
+          {new Date().getFullYear()}, Oscar Jin
         </footer>
       </div>
     </>
   )
 }
-
-Layout.propTypes = {
-  children: PropTypes.node.isRequired,
-}
+// <───────────────────────────────────────────────────────────────────────┘
 
 export default Layout
