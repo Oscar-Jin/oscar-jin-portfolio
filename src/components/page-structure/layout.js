@@ -14,12 +14,12 @@ const Container = styled.div`
 // <───────────────────────────────────────────────────────────────────────┘
 
 //  ───────────────────────────────────────────────────────── component ───┐
-AnimationReveal.propTypes = {
+Layout.propTypes = {
   disabled: PropTypes.bool,
   children: PropTypes.node.isRequired,
 }
 
-export default function AnimationReveal({ animationReveal, children }) {
+export default function Layout({ animationReveal, children }) {
   const directions = ["left", "right"]
 
   if (Array.isArray(children) === false) {
