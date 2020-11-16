@@ -90,7 +90,6 @@ export default function DreamBig() {
           </IllustrationContainer>
         </RightColumn>
       </TwoColumn>
-      {/* <DecoratorBlob1 /> */}
     </Container>
   )
 }
