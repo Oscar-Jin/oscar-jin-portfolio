@@ -8,7 +8,7 @@ import { motion } from "framer-motion"
 // <───────────────────────────────────────────────────────────────────────┘
 
 //  ────────────────────────────────────────────────────────── tailwind ───┐
-const Layout = styled.div`
+const Container = styled.div`
   ${tw`min-h-screen p-8 overflow-hidden font-display text-secondary-500`}
 `
 // <───────────────────────────────────────────────────────────────────────┘
@@ -19,24 +19,23 @@ AnimationReveal.propTypes = {
   children: PropTypes.node.isRequired,
 }
 
-export default function AnimationReveal({ disabled, children }) {
+export default function AnimationReveal({ animationReveal, children }) {
   const directions = ["left", "right"]
 
   if (Array.isArray(children) === false) {
     children = [children]
   }
 
-  if (disabled) {
-    return <Layout>{children}</Layout>
+  if (animationReveal) {
+    const animated = children.map((child, i) => (
+      <AnimatedSlideIn key={i} direction={directions[i % directions.length]}>
+        {child}
+      </AnimatedSlideIn>
+    ))
+    return <Container>{animated}</Container>
   }
 
-  const animated = children.map((child, i) => (
-    <AnimatedSlideIn key={i} direction={directions[i % directions.length]}>
-      {child}
-    </AnimatedSlideIn>
-  ))
-
-  return <Layout>{animated}</Layout>
+  return <Container>{children}</Container>
 }
 // <───────────────────────────────────────────────────────────────────────┘
 
