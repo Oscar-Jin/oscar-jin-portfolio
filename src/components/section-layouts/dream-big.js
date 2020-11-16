@@ -2,9 +2,9 @@
 import React from "react"
 import Img from "gatsby-image"
 import tw, { styled } from "twin.macro"
-import { useStaticQuery, graphql, Link } from "gatsby"
+import { useStaticQuery, graphql } from "gatsby"
 import rocketLaunch from "../../images/launch.svg"
-import CustomersLogoStripImage from "../../images/skill-set.png"
+import LinkButton from "../designer-uis/link-button"
 
 // ────────────────────────────────────────────────────────────────────────┘
 
@@ -41,9 +41,6 @@ const StripTitle = styled.p`
 `
 const StripImage = styled(Img)`
   ${tw`pr-5 mt-4 opacity-50 lg:pr-16 xl:pr-32`}
-`
-const LinkButton = styled(Link)`
-  ${tw`inline-block px-10 py-4 my-2 font-bold leading-none text-gray-100 transition duration-300 rounded-full cursor-pointer bg-primary-500 focus:outline-none hover:bg-primary-900`}
 `
 const Illustration = styled.img`
   ${tw`w-full max-w-lg min-w-0 xl:max-w-3xl lg:p-5 xl:p-16`}
