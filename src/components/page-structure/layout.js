@@ -4,6 +4,7 @@ import tw, { styled } from "twin.macro"
 import PropTypes from "prop-types"
 import useInView from "use-in-view"
 import { motion } from "framer-motion"
+import "../../styles/tailwind.css"
 
 // <───────────────────────────────────────────────────────────────────────┘
 
