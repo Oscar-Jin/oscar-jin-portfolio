@@ -1,8 +1,9 @@
 module.exports = {
   siteMetadata: {
     title: `Oscar Jin (@Kinchan)`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    description: `Portfolio website crafted by Oscar Jin. Known as 
+    "Kinchan" among his friends, Oscar is an iOS / Web Developer who is also passionate about UI and UX Design. He can speak 4 different languages and loves to travel.`,
+    author: `Oscar Jin`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -13,6 +14,8 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
+
+    `gatsby-plugin-styled-components`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-postcss`,
     `gatsby-plugin-sharp`,
@@ -25,7 +28,7 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/logo.png`, // This path is relative to the root of the site.
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
