@@ -3,8 +3,8 @@ import React from "react"
 import tw, { styled } from "twin.macro"
 import SEO from "../components/advanced-optimizations/seo"
 import Footer from "../components/hero-layouts/Footer"
-import Header from "../components/page-structure/header"
-import Layout from "../components/page-structure/layout"
+import Header from "../components/page-structures/header"
+import Layout from "../components/page-structures/layout"
 
 // <───────────────────────────────────────────────────────────────────────┘
 
