@@ -71,9 +71,9 @@ const Book = styled.li`
 
 //  ────────────────────────────────────────────────────────────── data ───┐
 const heading = "Leaning into the unknown"
-const subheading = "What I Learn"
+const subheading = "What I Study"
 const description =
-  "Talent is helpful. But knowledge is far more superior. Through self-education, a person gains the power to open the door of undiscovered territories."
+  "Talent is helpful. But knowledge is far more superior. Through self-education, a person gains the power to open the door to undiscovered territories."
 const categories = [
   {
     icon: <BiRun className="w-6 h-6 text-primary-500" />,
