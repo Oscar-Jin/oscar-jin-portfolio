@@ -93,7 +93,7 @@ export default function MyStrength() {
             </Heading>
             <Paragraph>
               Internationalization is hard. But if there is anything so called
-              language barrier, now you’ve got the power to break it.
+              language barrier, now you’ve got the force to break it.
             </Paragraph>
             <Lists>
               {languages.map((language, index) => (
