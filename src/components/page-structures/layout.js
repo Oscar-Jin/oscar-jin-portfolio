@@ -1,9 +1,12 @@
 //  ──────────────────────────────────────────────────────────── import ───┐
 import React from "react"
+import Header from "./header"
+import Footer from "../hero-layouts/Footer"
 import tw, { styled } from "twin.macro"
 import PropTypes from "prop-types"
 import useInView from "use-in-view"
 import { motion } from "framer-motion"
+
 import "../../styles/tailwind.css"
 
 // <───────────────────────────────────────────────────────────────────────┘
@@ -16,27 +19,39 @@ const Container = styled.div`
 
 //  ───────────────────────────────────────────────────────── component ───┐
 Layout.propTypes = {
-  disabled: PropTypes.bool,
+  animate: PropTypes.bool,
   children: PropTypes.node.isRequired,
 }
 
-export default function Layout({ animationReveal, children }) {
+export default function Layout({ animate, children }) {
   const directions = ["left", "right"]
 
   if (Array.isArray(children) === false) {
     children = [children]
   }
 
-  if (animationReveal) {
+  if (animate) {
     const animated = children.map((child, i) => (
       <AnimatedSlideIn key={i} direction={directions[i % directions.length]}>
         {child}
       </AnimatedSlideIn>
     ))
-    return <Container>{animated}</Container>
+    return (
+      <Container>
+        <Header />
+        {animated}
+        <Footer />
+      </Container>
+    )
   }
 
-  return <Container>{children}</Container>
+  return (
+    <Container>
+      <Header />
+      {children}
+      <Footer />
+    </Container>
+  )
 }
 // <───────────────────────────────────────────────────────────────────────┘
 
