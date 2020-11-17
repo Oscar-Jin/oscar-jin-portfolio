@@ -6,12 +6,6 @@ import LinkButton from "../designer-uis/link-button"
 // <───────────────────────────────────────────────────────────────────────┘
 
 //  ────────────────────────────────────────────────────────── tailwind ───┐
-const SectionHeading = styled.h2`
-  ${tw`text-4xl font-black tracking-wide text-center sm:text-5xl`}
-`
-const SubheadingBase = styled.h5`
-  ${tw`font-bold text-primary-500`}
-`
 const Container = styled.div`
   ${tw`relative`}
 `
@@ -32,6 +26,12 @@ const Image = styled.img`
 `
 const TextContent = styled.div`
   ${tw`text-center lg:py-8 md:text-left`}
+`
+const SectionHeading = styled.h2`
+  ${tw`text-4xl font-black tracking-wide text-center sm:text-5xl`}
+`
+const SubheadingBase = styled.h5`
+  ${tw`font-bold text-primary-500`}
 `
 const Subheading = styled(SubheadingBase)`
   ${tw`text-center md:text-left`}
