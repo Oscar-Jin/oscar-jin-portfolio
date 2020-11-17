@@ -1,7 +1,7 @@
 //  ──────────────────────────────────────────────────────────── import ───┐
 import React from "react"
 import tw, { styled } from "twin.macro"
-import oscar from "../../images/oscar-jin.png"
+import oscar from "../../images/oscar-avatar.jpg"
 import { BiLike } from "react-icons/bi"
 import { SectionHeading, SectionSubheading } from "../designer-uis/heading.js"
 
@@ -124,9 +124,9 @@ export default function Introduce() {
           <FactsContainer>
             <UserProfileContainer>
               <ProfileDescription>
-                Oscar is the type of guy who tend to spend way too much time on
-                creative stuff - like coding and styling this website. Though he
-                is quite proud of his work.
+                Oscar likes to spend many of his time on creative activities -
+                like coding and styling website. He is passionate about
+                learning. He is very proud of his work so far.
                 <AuthorSignature>Oscar Jin (@Kinchan)</AuthorSignature>
               </ProfileDescription>
               <ProfilePhotoContainer>
