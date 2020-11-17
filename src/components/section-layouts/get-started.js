@@ -12,7 +12,6 @@ const Container = styled.div`
 const ContentWithPaddingXl = styled.div`
   ${tw`max-w-screen-xl py-20 mx-auto lg:py-24`}
 `
-
 const PrimaryBackgroundContainer = styled.div`
   ${tw`relative py-20 rounded-lg lg:py-24 bg-primary-500`}
 `
