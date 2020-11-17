@@ -6,7 +6,6 @@ import tw, { styled } from "twin.macro"
 import PropTypes from "prop-types"
 import useInView from "use-in-view"
 import { motion } from "framer-motion"
-
 import "../../styles/tailwind.css"
 
 // <───────────────────────────────────────────────────────────────────────┘
@@ -15,6 +14,20 @@ import "../../styles/tailwind.css"
 const Container = styled.div`
   ${tw`min-h-screen p-8 overflow-hidden font-display text-secondary-500`}
 `
+// <───────────────────────────────────────────────────────────────────────┘
+
+//  ────────────────────────────────────────────────────────────── site ───┐
+Site.propTypes = {
+  children: PropTypes.node.isRequired,
+}
+
+const Site = ({ children }) => (
+  <Container>
+    <Header />
+    {children}
+    <Footer />
+  </Container>
+)
 // <───────────────────────────────────────────────────────────────────────┘
 
 //  ───────────────────────────────────────────────────────── component ───┐
@@ -36,22 +49,10 @@ export default function Layout({ animate, children }) {
         {child}
       </AnimatedSlideIn>
     ))
-    return (
-      <Container>
-        <Header />
-        {animated}
-        <Footer />
-      </Container>
-    )
+    return <Site>{animated}</Site>
   }
 
-  return (
-    <Container>
-      <Header />
-      {children}
-      <Footer />
-    </Container>
-  )
+  return <Site>{children}</Site>
 }
 // <───────────────────────────────────────────────────────────────────────┘
 
