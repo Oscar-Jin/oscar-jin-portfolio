@@ -1,7 +1,7 @@
 // ───────────────────────────────────────────────────────────── import ───┐
 import React from "react"
 import tw, { styled } from "twin.macro"
-import { SectionHeading, Subheading } from "../designer-uis/heading.js"
+import { SectionHeading, SectionSubheading } from "../designer-uis/heading.js"
 import programming from "../../images/programming.svg"
 import { Link } from "gatsby"
 
@@ -29,7 +29,7 @@ const Image = styled.img`
 const TextContent = styled.div`
   ${tw`text-center lg:py-8 md:text-left`}
 `
-const SubheadingResponsive = styled(Subheading)`
+const Subheading = styled(SectionSubheading)`
   ${tw`text-center md:text-left`}
 `
 const Heading = styled(SectionHeading)`
@@ -93,7 +93,7 @@ export default function WhatIDo() {
         </ImageColumn>
         <TextColumn>
           <TextContent>
-            <SubheadingResponsive>What I Do</SubheadingResponsive>
+            <Subheading>What I Do</Subheading>
             <Heading>
               Strive to <Highlight>become</Highlight> outstanding.
             </Heading>
