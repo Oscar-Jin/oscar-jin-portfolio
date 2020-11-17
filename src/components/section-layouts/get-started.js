@@ -50,7 +50,9 @@ export default function GetStarted() {
         <PrimaryBackgroundContainer>
           <Row>
             <TextContainer>
-              <Text>Checkout my awesome resume and start connect with me!</Text>
+              <Text>
+                Checkout my awesome resume and start to connect with me!
+              </Text>
             </TextContainer>
             <LinksContainer>
               <PrimaryLink to="/">Resume</PrimaryLink>
