@@ -108,7 +108,7 @@ export default function MyStrength() {
                 </List>
               ))}
             </Lists>
-            <LinkButton>And More...</LinkButton>
+            <LinkButton to="/">And More...</LinkButton>
           </TextContent>
         </TextColumn>
         <ImageColumn>

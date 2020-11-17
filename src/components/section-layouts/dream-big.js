@@ -72,7 +72,7 @@ export default function DreamBig() {
             If you’re desperately seeking for someone who can bring out the best
             in your business. Look no further, you have found the right man.
           </Paragraph>
-          <LinkButton>Find Out More</LinkButton>
+          <LinkButton to="/">Find Out More</LinkButton>
           <LogoStrip>
             <StripTitle>Skills I am proud of</StripTitle>
             <StripImage

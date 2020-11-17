@@ -121,21 +121,24 @@ const categories = [
 // <───────────────────────────────────────────────────────────────────────┘
 
 //  ───────────────────────────────────────────────────────── component ───┐
-export default function WhatILearn() {
+export default function WhatIStudy() {
   const cards = categories.map(category => (
-    <Column key={category}>
+    <Column key={category.title}>
       <Card>
         <IconContainer>{category.icon}</IconContainer>
         <TextContainer>
           <CardTitle>{category.title}</CardTitle>
           <BookList>
             <BookIconForSmallDevice />
-            {category.books.map(book => (
-              <Book key={book}>
-                <BookIconForLargeDevice />
-                {book}
-              </Book>
-            ))}
+            {category.books.map(book => {
+              console.log(book)
+              return (
+                <Book key={book.toString()}>
+                  <BookIconForLargeDevice />
+                  {book}
+                </Book>
+              )
+            })}
           </BookList>
         </TextContainer>
       </Card>
@@ -150,7 +153,7 @@ export default function WhatILearn() {
         <Description>{description}</Description>
         <VerticalSpacer />
         {cards}
-        <LinkButton>Explore My Library</LinkButton>
+        <LinkButton to="/">Explore My Library</LinkButton>
       </ThreeColumnContainer>
     </Container>
   )
