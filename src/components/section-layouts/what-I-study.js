@@ -10,25 +10,22 @@ import {
   BiCode,
 } from "react-icons/bi"
 import LinkButton from "../designer-uis/link-button"
+import { RiBookLine } from "react-icons/ri"
+import {
+  SectionDescription,
+  SectionHeading,
+  SectionSubheading,
+} from "../designer-uis/heading"
 // <───────────────────────────────────────────────────────────────────────┘
 
 //  ────────────────────────────────────────────────────────── tailwind ───┐
-const SectionDescription = styled.p`
-  ${tw`max-w-xl mt-4 text-sm font-medium leading-relaxed md:text-base lg:text-lg text-secondary-100`}
-`
-const SectionHeading = styled.h2`
-  ${tw`text-4xl font-black tracking-wide text-center sm:text-5xl`}
-`
-const SubheadingBase = styled.h5`
-  ${tw`font-bold text-primary-500`}
-`
 const Container = styled.div`
   ${tw`relative`}
 `
 const ThreeColumnContainer = styled.div`
-  ${tw`flex flex-col flex-wrap items-center max-w-screen-lg py-20 mx-auto md:items-stretch md:flex-row md:justify-center md:py-24`}
+  ${tw`flex flex-col items-center max-w-screen-lg py-20 mx-auto md:flex-wrap md:items-stretch md:flex-row md:justify-center md:py-24`}
 `
-const Subheading = styled(SubheadingBase)`
+const Subheading = styled(SectionSubheading)`
   ${tw`mb-4`}
 `
 const Heading = styled(SectionHeading)`
@@ -56,16 +53,23 @@ const CardTitle = styled.span`
   ${tw`mt-4 text-2xl font-bold leading-none tracking-wide`}
 `
 const BookList = styled.ul`
-  ${tw`mt-1 font-medium leading-loose text-center md:text-left md:mt-4 md:list-disc text-secondary-100`}
+  ${tw`mt-1 font-medium leading-loose text-center md:text-left md:mt-4 text-secondary-100`}
   ::after {
     content: "...";
     opacity: 0.3;
   }
 `
 const Book = styled.li`
+  ${tw`mx-auto md:truncate md:w-56`}
   :last-of-type {
     opacity: 0.9;
   }
+`
+const BookIconForSmallDevice = styled(RiBookLine)`
+  ${tw`inline-block w-4 h-4 opacity-50 md:hidden`}
+`
+const BookIconForLargeDevice = styled(RiBookLine)`
+  ${tw`hidden mr-2 md:inline-block`}
 `
 // <───────────────────────────────────────────────────────────────────────┘
 
@@ -73,7 +77,7 @@ const Book = styled.li`
 const heading = "Leaning into the unknown"
 const subheading = "What I Study"
 const description =
-  "Talent is helpful. But knowledge is far more superior. Through self-education, a person gains the power to open the door to undiscovered territories."
+  "Talent is helpful. But knowledge is far more superior. Through self-education, reading books give us the power to explore the unknown territories."
 const categories = [
   {
     icon: <BiRun className="w-6 h-6 text-primary-500" />,
@@ -125,8 +129,12 @@ export default function WhatILearn() {
         <TextContainer>
           <CardTitle>{category.title}</CardTitle>
           <BookList>
+            <BookIconForSmallDevice />
             {category.books.map(book => (
-              <Book key={book}>{book}</Book>
+              <Book key={book}>
+                <BookIconForLargeDevice />
+                {book}
+              </Book>
             ))}
           </BookList>
         </TextContainer>
