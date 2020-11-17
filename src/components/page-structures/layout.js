@@ -1,7 +1,7 @@
 //  ──────────────────────────────────────────────────────────── import ───┐
 import React from "react"
 import Header from "./header"
-import Footer from "../hero-layouts/Footer"
+import Footer from "./footer"
 import tw, { styled } from "twin.macro"
 import PropTypes from "prop-types"
 import useInView from "use-in-view"
@@ -14,20 +14,6 @@ import "../../styles/tailwind.css"
 const Container = styled.div`
   ${tw`min-h-screen p-8 overflow-hidden font-display text-secondary-500`}
 `
-// <───────────────────────────────────────────────────────────────────────┘
-
-//  ────────────────────────────────────────────────────────────── site ───┐
-Site.propTypes = {
-  children: PropTypes.node.isRequired,
-}
-
-const Site = ({ children }) => (
-  <Container>
-    <Header />
-    {children}
-    <Footer />
-  </Container>
-)
 // <───────────────────────────────────────────────────────────────────────┘
 
 //  ───────────────────────────────────────────────────────── component ───┐
@@ -53,6 +39,22 @@ export default function Layout({ animate, children }) {
   }
 
   return <Site>{children}</Site>
+}
+// <───────────────────────────────────────────────────────────────────────┘
+
+//  ────────────────────────────────────────────────────────────── site ───┐
+Site.propTypes = {
+  children: PropTypes.node.isRequired,
+}
+
+function Site({ children }) {
+  return (
+    <Container>
+      <Header />
+      {children}
+      <Footer />
+    </Container>
+  )
 }
 // <───────────────────────────────────────────────────────────────────────┘
 
