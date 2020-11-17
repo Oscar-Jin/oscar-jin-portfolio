@@ -66,12 +66,12 @@ function Header() {
     </NavLinks>,
   ]
 
-  const link = [
+  const link = (
     <Link to="/">
       <Logo src={logo} alt="logo" />
       <Title>Oscar Jin</Title>
-    </Link>,
-  ]
+    </Link>
+  )
 
   return (
     <Container>
