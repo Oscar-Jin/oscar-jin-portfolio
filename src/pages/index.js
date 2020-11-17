@@ -1,22 +1,27 @@
 import React from "react"
-import { Link } from "gatsby"
+import DreamBig from "../components/section-layouts/dream-big"
+import Layout from "../components/page-structures/layout"
+import MyStrength from "../components/section-layouts/my-strength"
+import WhatIStudy from "../components/section-layouts/what-I-study"
+import WhatIDo from "../components/section-layouts/what-i-do"
+import Teaching from "../components/section-layouts/teaching"
+import Introduce from "../components/section-layouts/introduce"
+import GetStarted from "../components/section-layouts/get-started"
+import SEO from "../components/advanced-optimizations/seo"
 
-import Layout from "../components/layout"
-import Image from "../components/image"
-import SEO from "../components/seo"
+const HomePage = () => {
+  return (
+    <Layout animate>
+      <SEO title="Home" />
+      <DreamBig />
+      <MyStrength />
+      <WhatIStudy />
+      <WhatIDo />
+      <Teaching />
+      <Introduce />
+      <GetStarted />
+    </Layout>
+  )
+}
 
-const IndexPage = () => (
-  <Layout>
-    <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
-    <Link to="/page-2/">Go to page 2</Link> <br />
-    <Link to="/using-typescript/">Go to "Using TypeScript"</Link>
-  </Layout>
-)
-
-export default IndexPage
+export default HomePage
