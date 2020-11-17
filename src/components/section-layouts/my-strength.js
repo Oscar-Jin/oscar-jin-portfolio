@@ -46,7 +46,7 @@ const Highlight = styled.span`
   ${tw`text-primary-500`}
 `
 const Lists = styled.ul`
-  ${tw`mt-12`}
+  ${tw`mt-12 mb-4`}
 `
 const List = styled.li`
   ${tw`flex flex-col items-center mt-8 md:flex-row md:items-start`}
@@ -65,6 +65,7 @@ const ListDescription = styled.p`
 `
 // <───────────────────────────────────────────────────────────────────────┘
 
+//  ───────────────────────────────────────────────────────── component ───┐
 export default function MyStrength() {
   const languages = [
     {
@@ -73,11 +74,11 @@ export default function MyStrength() {
     },
     {
       heading: "Chinese",
-      description: "Spoken by 1.2 billion people.",
+      description: "Spoken by 1.2 billion across the world.",
     },
     {
       heading: "Japanese",
-      description: "The language of the rising sun.",
+      description: "The language of 4.97 trillion GDP",
     },
   ]
 
@@ -91,8 +92,8 @@ export default function MyStrength() {
               One world, one <Highlight>mind</Highlight>.
             </Heading>
             <Paragraph>
-              If there is anything so called language barrier, now you’ve got
-              the fuel to break it.
+              Internationalization is hard. But if there is anything so called
+              language barrier, now you’ve got the power to break it.
             </Paragraph>
             <Lists>
               {languages.map((language, index) => (
@@ -117,3 +118,4 @@ export default function MyStrength() {
     </Container>
   )
 }
+// <───────────────────────────────────────────────────────────────────────┘

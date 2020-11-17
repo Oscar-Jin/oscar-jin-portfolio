@@ -70,7 +70,7 @@ export default function DreamBig() {
           </Heading>
           <Paragraph>
             If you’re desperately seeking for someone who can bring out the best
-            in your business. Look no further, you have found the right guy.
+            in your business. Look no further, you have found the right man.
           </Paragraph>
           <LinkButton>Find Out More</LinkButton>
           <LogoStrip>
