@@ -4,6 +4,7 @@ import tw, { styled } from "twin.macro"
 import { SectionHeading, SectionSubheading } from "../designer-uis/heading.js"
 import programming from "../../images/programming.svg"
 import { Link } from "gatsby"
+import { Trans } from "gatsby-plugin-react-i18next"
 
 // ────────────────────────────────────────────────────────────────────────┘
 
@@ -67,24 +68,74 @@ const LinkButtonRed = styled(Link)`
 `
 // <───────────────────────────────────────────────────────────────────────┘
 
-export default function WhatIDo() {
-  const skills = [
+//  ────────────────────────────────────────────────────────── localize ───┐
+const localized = {
+  subHeading: (
+    <Trans ns="index" native>
+      What I Do
+    </Trans>
+  ),
+  heading: (
+    <Trans ns="index" native>
+      Strive to <Highlight>become</Highlight> outstanding.
+    </Trans>
+  ),
+  description: (
+    <Trans ns="index" native>
+      Relentless, what it takes to become exceptional. With a great appetite to
+      take in new skills, It will not be your typical developer who’s on the
+      project.
+    </Trans>
+  ),
+  skills: [
     {
-      title: "iOS / Web Dev",
-      description:
-        "From Mobile to Desktop, the possibilities are endless. Need some new feature?",
-      button: <LinkButtonTeal to="/">My Works</LinkButtonTeal>,
+      title: (
+        <Trans ns="index" native>
+          iOS / Web Dev
+        </Trans>
+      ),
+      description: (
+        <Trans ns="index" native>
+          From Mobile to Desktop, the possibilities are endless. Need some new
+          feature?
+        </Trans>
+      ),
+      button: (
+        <LinkButtonTeal to="/">
+          <Trans ns="index" native>
+            My Works
+          </Trans>
+        </LinkButtonTeal>
+      ),
       color: "bg-teal-300",
     },
     {
-      title: "UI / UX Design",
-      description:
-        "Great product comes with a greater user experience. Crappy UI? Not on my watch.",
-      button: <LinkButtonRed to="/">My Designs</LinkButtonRed>,
+      title: (
+        <Trans ns="index" native>
+          UI / UX Design
+        </Trans>
+      ),
+      description: (
+        <Trans ns="index" native>
+          Great product comes with a greater user experience. Crappy UI? Not on
+          my watch.
+        </Trans>
+      ),
+      button: (
+        <LinkButtonRed to="/">
+          <Trans ns="index" native>
+            My Designs
+          </Trans>
+        </LinkButtonRed>
+      ),
       color: "bg-red-300",
     },
-  ]
+  ],
+}
+// <───────────────────────────────────────────────────────────────────────┘
 
+//  ───────────────────────────────────────────────────────── component ───┐
+export default function WhatIDo() {
   return (
     <Container>
       <TwoColumn>
@@ -93,17 +144,11 @@ export default function WhatIDo() {
         </ImageColumn>
         <TextColumn>
           <TextContent>
-            <Subheading>What I Do</Subheading>
-            <Heading>
-              Strive to <Highlight>become</Highlight> outstanding.
-            </Heading>
-            <Description>
-              Relentless, what it takes to become exceptional. With a great
-              appetite to take in new skills, It will not be your typical
-              developer who’s on the project.
-            </Description>
+            <Subheading>{localized.subHeading}</Subheading>
+            <Heading>{localized.heading}</Heading>
+            <Description>{localized.description}</Description>
             <ListOfSkills>
-              {skills.map((skill, index) => (
+              {localized.skills.map((skill, index) => (
                 <Skill key={index}>
                   <SkillHeadingContainer>
                     <SkillColor className={skill.color} />
@@ -120,3 +165,4 @@ export default function WhatIDo() {
     </Container>
   )
 }
+// <───────────────────────────────────────────────────────────────────────┘

@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 //  ──────────────────────────────────────────────────────────── import ───┐
 import React from "react"
 import tw, { styled } from "twin.macro"
@@ -16,6 +17,7 @@ import {
   SectionHeading,
   SectionSubheading,
 } from "../designer-uis/heading"
+import { Trans } from "gatsby-plugin-react-i18next"
 // <───────────────────────────────────────────────────────────────────────┘
 
 //  ────────────────────────────────────────────────────────── tailwind ───┐
@@ -73,72 +75,163 @@ const BookIconForLargeDevice = styled(RiBookLine)`
 `
 // <───────────────────────────────────────────────────────────────────────┘
 
-//  ────────────────────────────────────────────────────────────── data ───┐
-const heading = "Leaning into the unknown"
-const subheading = "What I Study"
-const description =
-  "Talent is helpful. But knowledge is far more superior. Through self-education, reading books give us the power to explore the unknown territories."
-const categories = [
-  {
-    icon: <BiRun className="w-6 h-6 text-primary-500" />,
-    title: "Leadership",
-    books: [
-      "Good To Great",
-      "The Seven Habits of Highly Effective People",
-      "Extreme Ownership",
-    ],
-  },
-  {
-    icon: <BiBarChartSquare className="w-6 h-6 text-primary-500" />,
-    title: "Business & Management",
-    books: ["The Lean Startup", "The Startup Owner's Manual"],
-  },
-  {
-    icon: <BiBible className="w-6 h-6 text-primary-500" />,
-    title: "Philosophy",
-    books: ["Meditations", "Think and Grow Rich", "The Obstacle Is the Way"],
-  },
-  {
-    icon: <BiLandscape className="w-6 h-6 text-primary-500" />,
-    title: "Arts & Design",
-    books: ["Change by Design", "The Design of Everyday Things"],
-  },
-  {
-    icon: <BiCode className="w-6 h-6 text-primary-500" />,
-    title: "Programming",
-    books: ["Computer Science An Overview", "Learn Enough To Be Dangerous"],
-  },
-  {
-    icon: <BiBrain className="w-6 h-6 text-primary-500" />,
-    title: "Neuropsychology",
-    books: [
-      "The Willpower Instinct",
-      "Mindset",
-      "The Principle of Neural Science",
-    ],
-  },
-]
+//  ────────────────────────────────────────────────────────── localize ───┐
+const localized = {
+  heading: (
+    <Trans ns="index" native>
+      Leaning into the unknown
+    </Trans>
+  ),
+  subheading: (
+    <Trans ns="index" native>
+      What I Study
+    </Trans>
+  ),
+  description: (
+    <Trans ns="index" native>
+      Talent is helpful. But knowledge is far more superior. Through
+      self-education, reading books give us the power to explore the unknown
+      territories.
+    </Trans>
+  ),
+  categories: [
+    {
+      key: "Leadership",
+      icon: <BiRun className="w-6 h-6 text-primary-500" />,
+      title: (
+        <Trans ns="index" native>
+          Leadership
+        </Trans>
+      ),
+      books: [
+        <Trans ns="index" native key="01">
+          Good To Great
+        </Trans>,
+        <Trans ns="index" native key="02">
+          The Seven Habits of Highly Effective People
+        </Trans>,
+        <Trans ns="index" native key="03">
+          Extreme Ownership
+        </Trans>,
+      ],
+    },
+    {
+      key: "Business & Management",
+      icon: <BiBarChartSquare className="w-6 h-6 text-primary-500" />,
+      title: (
+        <Trans ns="index" native>
+          Business & Management
+        </Trans>
+      ),
+      books: [
+        <Trans ns="index" native key="01">
+          The Lean Startup
+        </Trans>,
+
+        <Trans ns="index" native key="02">
+          The Startup Owner's Manual
+        </Trans>,
+      ],
+    },
+    {
+      key: "Philosophy",
+      icon: <BiBible className="w-6 h-6 text-primary-500" />,
+      title: (
+        <Trans ns="index" native>
+          Philosophy
+        </Trans>
+      ),
+      books: [
+        <Trans ns="index" native key="01">
+          Meditations
+        </Trans>,
+        <Trans ns="index" native key="02">
+          Think and Grow Rich
+        </Trans>,
+        <Trans ns="index" native key="03">
+          The Obstacle Is the Way
+        </Trans>,
+      ],
+    },
+    {
+      key: "Arts & Design",
+      icon: <BiLandscape className="w-6 h-6 text-primary-500" />,
+      title: (
+        <Trans ns="index" native>
+          Arts & Design
+        </Trans>
+      ),
+      books: [
+        <Trans ns="index" native key="01">
+          Change by Design
+        </Trans>,
+        <Trans ns="index" native key="02">
+          The Design of Everyday Things
+        </Trans>,
+      ],
+    },
+    {
+      key: "Programming",
+      icon: <BiCode className="w-6 h-6 text-primary-500" />,
+      title: (
+        <Trans ns="index" native>
+          Programming
+        </Trans>
+      ),
+      books: [
+        <Trans ns="index" native key="01">
+          Computer Science An Overview
+        </Trans>,
+        <Trans ns="index" native key="02">
+          Learn Enough To Be Dangerous
+        </Trans>,
+      ],
+    },
+    {
+      key: "Neuropsychology",
+      icon: <BiBrain className="w-6 h-6 text-primary-500" />,
+      title: (
+        <Trans ns="index" native>
+          Neuropsychology
+        </Trans>
+      ),
+      books: [
+        <Trans ns="index" native key="01">
+          The Willpower Instinct
+        </Trans>,
+        <Trans ns="index" native key="02">
+          Mindset
+        </Trans>,
+        <Trans ns="index" native key="03">
+          The Principle of Neural Science
+        </Trans>,
+      ],
+    },
+  ],
+  linkButton: (
+    <Trans ns="index" native>
+      Explore My Library
+    </Trans>
+  ),
+}
 // <───────────────────────────────────────────────────────────────────────┘
 
 //  ───────────────────────────────────────────────────────── component ───┐
 export default function WhatIStudy() {
-  const cards = categories.map(category => (
-    <Column key={category.title}>
+  const cards = localized.categories.map(category => (
+    <Column key={category.key}>
       <Card>
         <IconContainer>{category.icon}</IconContainer>
         <TextContainer>
           <CardTitle>{category.title}</CardTitle>
           <BookList>
             <BookIconForSmallDevice />
-            {category.books.map(book => {
-              console.log(book)
-              return (
-                <Book key={book.toString()}>
-                  <BookIconForLargeDevice />
-                  {book}
-                </Book>
-              )
-            })}
+            {category.books.map((book, index) => (
+              <Book key={index}>
+                <BookIconForLargeDevice />
+                {book}
+              </Book>
+            ))}
           </BookList>
         </TextContainer>
       </Card>
@@ -148,12 +241,12 @@ export default function WhatIStudy() {
   return (
     <Container>
       <ThreeColumnContainer>
-        <Subheading>{subheading}</Subheading>
-        <Heading>{heading}</Heading>
-        <Description>{description}</Description>
+        <Subheading>{localized.subheading}</Subheading>
+        <Heading>{localized.heading}</Heading>
+        <Description>{localized.description}</Description>
         <VerticalSpacer />
         {cards}
-        <LinkButton to="/">Explore My Library</LinkButton>
+        <LinkButton to="/">{localized.linkButton}</LinkButton>
       </ThreeColumnContainer>
     </Container>
   )

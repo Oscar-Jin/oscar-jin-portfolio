@@ -4,9 +4,10 @@ import tw, { styled } from "twin.macro"
 import logo from "../../images/logo.svg"
 import LanguageSelector from "../advanced-optimizations/language-selector"
 import useNavToggler from "../../hooks/useNavToggler"
+import { Link, Trans } from "gatsby-plugin-react-i18next"
 import { BiX, BiMenu } from "react-icons/bi"
 import { motion } from "framer-motion"
-import { Link } from "gatsby"
+// import { Link } from "gatsby"
 
 // <───────────────────────────────────────────────────────────────────────┘
 
@@ -58,11 +59,21 @@ function Header() {
 
   const links = [
     <NavLinks key={1}>
-      <NavLink to="/">Books</NavLink>
-      <NavLink to="/">Works</NavLink>
-      <NavLink to="/">Designs</NavLink>
-      <NavLink to="/">Connect</NavLink>
-      <PrimaryLink to="/">Resume</PrimaryLink>
+      <NavLink to="/">
+        <Trans ns="index">Books</Trans>
+      </NavLink>
+      <NavLink to="/">
+        <Trans ns="index">Works</Trans>
+      </NavLink>
+      <NavLink to="/">
+        <Trans ns="index">Designs</Trans>
+      </NavLink>
+      <NavLink to="/">
+        <Trans ns="index">Connect</Trans>
+      </NavLink>
+      <PrimaryLink to="/">
+        <Trans ns="index">Resume</Trans>
+      </PrimaryLink>
     </NavLinks>,
   ]
 

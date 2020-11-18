@@ -3,6 +3,7 @@ import React from "react"
 import tw, { styled } from "twin.macro"
 import oscar from "../../images/oscar-avatar.jpg"
 import { BiLike } from "react-icons/bi"
+import { Trans } from "gatsby-plugin-react-i18next"
 import { SectionHeading, SectionSubheading } from "../designer-uis/heading.js"
 
 // <───────────────────────────────────────────────────────────────────────┘
@@ -94,40 +95,65 @@ const BlobTwo = () => (
 
 // <───────────────────────────────────────────────────────────────────────┘
 
-export default function Introduce() {
-  const facts = [
-    {
-      description: "25 years old guy living in Tokyo, Japan.",
-    },
-    {
-      description: "Speak English, Japanese, Chinese and some bits of Korean.",
-    },
-    {
-      description: "Code in Swift and JavaScript. JAMStack are his favorite.",
-    },
-    {
-      description: "Path to become an entrepreneur.",
-    },
-    {
-      description: "Fanatic in graphic design :)",
-    },
-  ]
+//  ────────────────────────────────────────────────────────── localize ───┐
+const localized = {
+  subheading: (
+    <Trans ns="index" native>
+      Introduce
+    </Trans>
+  ),
+  heading: (
+    <Trans ns="index" native>
+      Say hello to Oscar !
+    </Trans>
+  ),
+  profileDescription: (
+    <Trans ns="index" native>
+      Oscar likes to spend many of his time on creative activities - like coding
+      and styling website. He is passionate about learning. He is very proud of
+      his work.
+    </Trans>
+  ),
+  authorSignature: (
+    <Trans ns="index" native>
+      Oscar Jin (@Kinchan)
+    </Trans>
+  ),
+  facts: [
+    <Trans ns="index" native key="01">
+      25 years old guy living in Tokyo, Japan.
+    </Trans>,
+    <Trans ns="index" native key="02">
+      Speak English, Japanese, Chinese and some bits of Korean.
+    </Trans>,
+    <Trans ns="index" native key="03">
+      Code in Swift and JavaScript. JAMStack are his favorite.
+    </Trans>,
+    <Trans ns="index" native key="04">
+      Path to become an entrepreneur.
+    </Trans>,
+    <Trans ns="index" native key="05">
+      Fanatic in graphic design.
+    </Trans>,
+  ],
+}
+// <───────────────────────────────────────────────────────────────────────┘
 
+//  ───────────────────────────────────────────────────────── component ───┐
+export default function Introduce() {
   return (
     <Container>
       <ContentWithPaddingXl>
         <Column>
           <HeaderContent>
-            <Subheading>Introduce</Subheading>
-            <Heading>Say hello to Oscar !</Heading>
+            <Subheading>{localized.subheading}</Subheading>
+            <Heading>{localized.heading}</Heading>
           </HeaderContent>
           <FactsContainer>
             <UserProfileContainer>
               <ProfileDescription>
-                Oscar likes to spend many of his time on creative activities -
-                like coding and styling website. He is passionate about
-                learning. He is very proud of his work so far.
-                <AuthorSignature>Oscar Jin (@Kinchan)</AuthorSignature>
+                {localized.profileDescription}
+                <AuthorSignature>{localized.authorSignature}</AuthorSignature>
               </ProfileDescription>
               <ProfilePhotoContainer>
                 <PhotoContainer>
@@ -135,12 +161,12 @@ export default function Introduce() {
                 </PhotoContainer>
               </ProfilePhotoContainer>
             </UserProfileContainer>
-            {facts.map((fact, index) => (
+            {localized.facts.map((fact, index) => (
               <Fact key={index}>
                 <Description>
                   <DescriptionText>
                     <LikeIcon />
-                    {fact.description}
+                    {fact}
                   </DescriptionText>
                 </Description>
               </Fact>
@@ -153,3 +179,4 @@ export default function Introduce() {
     </Container>
   )
 }
+// <───────────────────────────────────────────────────────────────────────┘

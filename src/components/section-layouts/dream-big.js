@@ -5,7 +5,7 @@ import tw, { styled } from "twin.macro"
 import { useStaticQuery, graphql } from "gatsby"
 import rocketLaunch from "../../images/launch.svg"
 import LinkButton from "../designer-uis/link-button"
-
+import { Trans } from "gatsby-plugin-react-i18next"
 // ────────────────────────────────────────────────────────────────────────┘
 
 //  ────────────────────────────────────────────────────────── tailwind ───┐
@@ -47,6 +47,32 @@ const Illustration = styled.img`
 `
 // <───────────────────────────────────────────────────────────────────────┘
 
+//  ────────────────────────────────────────────────────────── localize ───┐
+const localized = {
+  heading: (
+    <Trans ns="index" native>
+      Dream <Highlight>big.</Highlight> No boundary.
+    </Trans>
+  ),
+  paragraph: (
+    <Trans ns="index" native>
+      If you’re desperately seeking for someone who can bring out the best in
+      your business. Look no further, you have found the right man.
+    </Trans>
+  ),
+  linkButton: (
+    <Trans ns="index" native>
+      Find Out More
+    </Trans>
+  ),
+  stripTitle: (
+    <Trans ns="index" native>
+      Skills I am proud of
+    </Trans>
+  ),
+}
+// <───────────────────────────────────────────────────────────────────────┘
+
 //  ───────────────────────────────────────────────────────── component ───┐
 export default function DreamBig() {
   const data = useStaticQuery(graphql`
@@ -65,25 +91,17 @@ export default function DreamBig() {
     <Container>
       <TwoColumn>
         <LeftColumn>
-          <Heading>
-            Dream <Highlight>big.</Highlight> No boundary.
-          </Heading>
-          <Paragraph>
-            If you’re desperately seeking for someone who can bring out the best
-            in your business. Look no further, you have found the right man.
-          </Paragraph>
-          <LinkButton to="/">Find Out More</LinkButton>
+          <Heading>{localized.heading}</Heading>
+          <Paragraph>{localized.paragraph}</Paragraph>
+          <LinkButton to="/">{localized.linkButton}</LinkButton>
           <LogoStrip>
-            <StripTitle>Skills I am proud of</StripTitle>
-            <StripImage
-              fluid={data?.file?.childImageSharp?.fluid}
-              alt="list of skills I have"
-            />
+            <StripTitle>{localized.stripTitle}</StripTitle>
+            <StripImage fluid={data?.file?.childImageSharp?.fluid} />
           </LogoStrip>
         </LeftColumn>
         <RightColumn>
           <IllustrationContainer>
-            <Illustration src={rocketLaunch} alt="rocket ready to launch" />
+            <Illustration src={rocketLaunch} />
           </IllustrationContainer>
         </RightColumn>
       </TwoColumn>

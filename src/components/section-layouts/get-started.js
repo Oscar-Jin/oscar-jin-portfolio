@@ -1,8 +1,8 @@
 //  ──────────────────────────────────────────────────────────── import ───┐
 import React from "react"
-import tw, { styled } from "twin.macro"
 import { Link } from "gatsby"
-
+import tw, { styled } from "twin.macro"
+import { Trans } from "gatsby-plugin-react-i18next"
 // <───────────────────────────────────────────────────────────────────────┘
 
 //  ────────────────────────────────────────────────────────── tailwind ───┐
@@ -41,6 +41,26 @@ const SecondaryLink = styled(LinkBase)`
 `
 // <───────────────────────────────────────────────────────────────────────┘
 
+//  ────────────────────────────────────────────────────────── localize ───┐
+const localized = {
+  content: (
+    <Trans ns="index" native>
+      Checkout my awesome resume and start to connect with me!
+    </Trans>
+  ),
+  primaryLink: (
+    <Trans ns="index" native>
+      Resume
+    </Trans>
+  ),
+  secondaryLink: (
+    <Trans ns="index" native>
+      Connect
+    </Trans>
+  ),
+}
+// <───────────────────────────────────────────────────────────────────────┘
+
 //  ───────────────────────────────────────────────────────── component ───┐
 export default function GetStarted() {
   return (
@@ -49,13 +69,11 @@ export default function GetStarted() {
         <PrimaryBackgroundContainer>
           <Row>
             <TextContainer>
-              <Text>
-                Checkout my awesome resume and start to connect with me!
-              </Text>
+              <Text>{localized.content}</Text>
             </TextContainer>
             <LinksContainer>
-              <PrimaryLink to="/">Resume</PrimaryLink>
-              <SecondaryLink to="/">Connect</SecondaryLink>
+              <PrimaryLink to="/">{localized.primaryLink}</PrimaryLink>
+              <SecondaryLink to="/">{localized.secondaryLink}</SecondaryLink>
             </LinksContainer>
           </Row>
         </PrimaryBackgroundContainer>

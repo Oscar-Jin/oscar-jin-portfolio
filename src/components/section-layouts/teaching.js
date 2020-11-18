@@ -5,6 +5,7 @@ import tw, { styled } from "twin.macro"
 import { AiFillStar } from "react-icons/ai"
 import { BiLeftArrowAlt, BiRightArrowAlt } from "react-icons/bi"
 import { SectionHeading, SectionSubheading } from "../designer-uis/heading.js"
+import { Trans } from "gatsby-plugin-react-i18next"
 import teaching from "../../images/teaching.svg"
 import woman from "../../images/woman.svg"
 import womanLonghair from "../../images/woman-longhair.svg"
@@ -102,29 +103,82 @@ const RightArrow = styled(BiRightArrowAlt)`
 `
 // <───────────────────────────────────────────────────────────────────────┘
 
-//  ───────────────────────────────────────────────────────── component ───┐
-export default function Teaching() {
-  const [sliderRef, setSliderRef] = useState(null)
-  const testimonials = [
+//  ────────────────────────────────────────────────────────── localize ───┐
+const localized = {
+  subHeading: (
+    <Trans ns="index" native>
+      Teaching
+    </Trans>
+  ),
+  heading: (
+    <Trans ns="index" native>
+      The best <Highlight>form</Highlight> of learning.
+    </Trans>
+  ),
+  description: (
+    <Trans ns="index" native>
+      Regardless of what I do, I try to always improve. That is why teaching is
+      my second passion. They are not limited to my occupation, but also the
+      language I speak, the books I read, tutorials I watch; all sort of
+      materials I came across.
+    </Trans>
+  ),
+  testimonials: [
     {
       stars: 5,
       profileImageSrc: womanLonghair,
-      heading: "Attention to detail",
-      quote:
-        "Oscar is great at teaching. I have acquired so much more knowledge than just learning all by myself. He has a profound knowledge of JavaScript. I would definitely recommend him to others!",
-      customerName: "あやぱん",
-      customerTitle: "デザイナー、企画",
+      heading: (
+        <Trans ns="index" native>
+          とても助かりました！
+        </Trans>
+      ),
+      quote: (
+        <Trans ns="index" native>
+          金ちゃん先生教えるのとても上手いんです！CSSやJavaScriptについて色々と教わりました。とても簡単に解説してくれるのですごく助かります！
+        </Trans>
+      ),
+      customerName: (
+        <Trans ns="index" native>
+          あやぱん
+        </Trans>
+      ),
+      customerTitle: (
+        <Trans ns="index" native>
+          デザイナー、企画
+        </Trans>
+      ),
     },
     {
       stars: 5,
       profileImageSrc: woman,
-      heading: "金ちゃん先生物知りで面白い!",
-      quote:
-        "金ちゃん先生教えるの上手！色んなこと知ってるから話すの楽しい！今まで知らなかったことも分かるようになって、自分で成長を感じた。いつもありがとう！",
-      customerName: "わか",
-      customerTitle: "学生、クリエイター",
+      heading: (
+        <Trans ns="index" native>
+          金ちゃん先生物知りで面白い!
+        </Trans>
+      ),
+      quote: (
+        <Trans ns="index" native>
+          金ちゃん先生教えるの上手！色んなこと知ってるから話すの楽しい！今まで知らなかったことも分かるようになって、自分で成長を感じた。いつもありがとう！
+        </Trans>
+      ),
+      customerName: (
+        <Trans ns="index" native>
+          わか
+        </Trans>
+      ),
+      customerTitle: (
+        <Trans ns="index" native>
+          学生、クリエイター,
+        </Trans>
+      ),
     },
-  ]
+  ],
+}
+// <───────────────────────────────────────────────────────────────────────┘
+
+//  ───────────────────────────────────────────────────────── component ───┐
+export default function Teaching() {
+  const [sliderRef, setSliderRef] = useState(null)
 
   return (
     <Container>
@@ -134,18 +188,11 @@ export default function Teaching() {
             <Image src={teaching} />
           </ImageColumn>
           <TextColumn>
-            <Subheading>Teaching</Subheading>
-            <Heading>
-              The best <Highlight>form</Highlight> of learning.
-            </Heading>
-            <Description>
-              Regardless of what I do, I try to always improve. That is why
-              teaching is my second passion. They are not limited to my
-              occupation, but also the language I speak, the books I read,
-              tutorials I watch; all sort of materials I came across.
-            </Description>
+            <Subheading>{localized.subHeading}</Subheading>
+            <Heading>{localized.heading}</Heading>
+            <Description>{localized.description}</Description>
             <TestimonialSlider arrows={false} ref={setSliderRef}>
-              {testimonials.map((testimonial, index) => (
+              {localized.testimonials.map((testimonial, index) => (
                 <Testimonial key={index}>
                   <StarsContainer>
                     {Array.from(Array(testimonial.stars).keys()).map(number => (
@@ -158,7 +205,6 @@ export default function Teaching() {
                     <StudentInfo>
                       <StudentProfilePicture
                         src={testimonial.profileImageSrc}
-                        alt={testimonial.customerName}
                       />
                       <StudentTextInfo>
                         <StudentName>{testimonial.customerName}</StudentName>

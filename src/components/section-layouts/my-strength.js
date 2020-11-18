@@ -3,6 +3,7 @@ import React from "react"
 import tw, { styled } from "twin.macro"
 import worldJourney from "../../images/journey.svg"
 import LinkButton from "../designer-uis/link-button"
+import { Trans } from "gatsby-plugin-react-i18next"
 // <───────────────────────────────────────────────────────────────────────┘
 
 //  ────────────────────────────────────────────────────────── tailwind ───┐
@@ -65,50 +66,94 @@ const ListDescription = styled.p`
 `
 // <───────────────────────────────────────────────────────────────────────┘
 
+//  ────────────────────────────────────────────────────────── localize ───┐
+const localized = {
+  subheading: (
+    <Trans ns="index" native>
+      My Strength
+    </Trans>
+  ),
+  heading: (
+    <Trans ns="index" native>
+      One world, one <Highlight>mind</Highlight>.
+    </Trans>
+  ),
+  paragraph: (
+    <Trans ns="index" native>
+      Internationalization is hard. But if there is anything so called language
+      barrier, now you’ve got the force to break it.
+    </Trans>
+  ),
+  spokenLanguages: [
+    {
+      name: (
+        <Trans ns="index" native>
+          English
+        </Trans>
+      ),
+      description: (
+        <Trans ns="index" native>
+          Used in more than 80+ countries.
+        </Trans>
+      ),
+    },
+    {
+      name: (
+        <Trans ns="index" native>
+          Chinese
+        </Trans>
+      ),
+      description: (
+        <Trans ns="index" native>
+          Spoken by 1.2 billion across the world.
+        </Trans>
+      ),
+    },
+    {
+      name: (
+        <Trans ns="index" native>
+          Japanese
+        </Trans>
+      ),
+      description: (
+        <Trans ns="index" native>
+          The language of 4.97 trillion GDP
+        </Trans>
+      ),
+    },
+  ],
+  linkButton: (
+    <Trans ns="index" native>
+      And More...
+    </Trans>
+  ),
+}
+// <───────────────────────────────────────────────────────────────────────┘
+
 //  ───────────────────────────────────────────────────────── component ───┐
 export default function MyStrength() {
-  const languages = [
-    {
-      heading: "English",
-      description: "Used in more than 80+ countries.",
-    },
-    {
-      heading: "Chinese",
-      description: "Spoken by 1.2 billion across the world.",
-    },
-    {
-      heading: "Japanese",
-      description: "The language of 4.97 trillion GDP",
-    },
-  ]
-
   return (
     <Container>
       <TwoColumn>
         <TextColumn>
           <TextContent>
-            <Subheading>My Strength</Subheading>
-            <Heading>
-              One world, one <Highlight>mind</Highlight>.
-            </Heading>
-            <Paragraph>
-              Internationalization is hard. But if there is anything so called
-              language barrier, now you’ve got the force to break it.
-            </Paragraph>
+            <Subheading>{localized.subheading}</Subheading>
+            <Heading>{localized.heading}</Heading>
+            <Paragraph>{localized.paragraph}</Paragraph>
             <Lists>
-              {languages.map((language, index) => (
+              {localized.spokenLanguages.map((language, index) => (
                 <List key={index}>
                   <ListCount>
                     {(index + 1).toString().padStart(2, "0")}
                   </ListCount>
                   <ListContent>
-                    <ListHeading>{language.heading}</ListHeading>
+                    <ListHeading>{language.name}</ListHeading>
                     <ListDescription>{language.description}</ListDescription>
                   </ListContent>
                 </List>
               ))}
             </Lists>
-            <LinkButton to="/">And More...</LinkButton>
+            <LinkButton to="/">{localized.linkButton}</LinkButton>
           </TextContent>
         </TextColumn>
         <ImageColumn>
