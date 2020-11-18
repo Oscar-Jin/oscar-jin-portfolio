@@ -1,11 +1,12 @@
+import { useI18next } from "gatsby-plugin-react-i18next"
 import React, { useState } from "react"
 import { BiCheck } from "react-icons/bi"
 
 const LanguageSelector = () => {
-  const [locale, setLocale] = useState("en")
+  const { languages, language, changeLanguage } = useI18next()
   const [hidden, setHidden] = useState(true)
 
-  const languages = {
+  const dictionary = {
     en: "🇬🇧 English",
     ja: "🇯🇵 日本語",
     zh: "🇨🇳 中文",
@@ -25,7 +26,7 @@ const LanguageSelector = () => {
           onClick={toggleOptions}
         >
           <div className="flex items-center space-x-3">
-            <span className="block truncate">{languages[locale]}</span>
+            <span className="block truncate">{dictionary[language]}</span>
           </div>
         </button>
       </span>
@@ -42,23 +43,26 @@ const LanguageSelector = () => {
           tabIndex="-1"
           className="px-3 py-2 overflow-auto text-base leading-6 rounded-md shadow-xs max-h-56 focus:outline-none sm:text-sm sm:leading-5"
         >
-          {Object.keys(languages).map(key => (
+          {languages.map(key => (
             <li
               key={key}
               data-locale={key}
               role="option"
               className="relative p-2 text-gray-900 rounded-md cursor-pointer select-none pr-9 hover:bg-gray-100"
               onClick={() => {
-                setLocale(key)
                 setHidden(true)
+                changeLanguage(key)
               }}
             >
               <div className="font-normal truncate">
-                {languages[key]}
-                {key === locale && (
+                {dictionary[key]}
+                {key === language && (
                   <BiCheck className="relative inline-block w-4 h-4 ml-2 " />
                 )}
               </div>
+              {/* <Link to={originalPath} language={key}>
+                {dictionary[key]}
+              </Link> */}
             </li>
           ))}
         </ul>

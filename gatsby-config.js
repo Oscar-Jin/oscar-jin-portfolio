@@ -3,7 +3,7 @@ module.exports = {
     title: `Oscar Jin (@Kinchan)`,
     description: `Portfolio website crafted by Oscar Jin. Known as 
     "Kinchan" among his friends, Oscar is an iOS / Web Developer who is also passionate about UI and UX Design. He can speak 4 different languages and loves to travel.`,
-    author: `Oscar Jin`,
+    author: `Oscar Jin (@Kinchan)`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -14,11 +14,26 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
-
     `gatsby-plugin-styled-components`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-postcss`,
     `gatsby-plugin-sharp`,
+    {
+      resolve: `gatsby-plugin-react-i18next`,
+      options: {
+        path: `${__dirname}/locales`,
+        languages: [`en`, `ja`, `zh`],
+        defaultLanguage: `en`,
+
+        i18nextOptions: {
+          interpolation: {
+            escapeValue: false, // not needed for react as it escapes by default
+          },
+          keySeparator: false,
+          nsSeparator: false,
+        },
+      },
+    },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
