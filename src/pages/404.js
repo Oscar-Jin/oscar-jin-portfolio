@@ -2,8 +2,6 @@
 import React from "react"
 import tw, { styled } from "twin.macro"
 import SEO from "../components/advanced-optimizations/seo"
-import Footer from "../components/hero-layouts/Footer"
-import Header from "../components/page-structures/header"
 import Layout from "../components/page-structures/layout"
 
 // <───────────────────────────────────────────────────────────────────────┘
@@ -11,7 +9,7 @@ import Layout from "../components/page-structures/layout"
 //  ────────────────────────────────────────────────────────── tailwind ───┐
 const StretchToFill = styled.div`
   ${tw`flex flex-col`}
-  min-height: calc(100vh - 114px)
+  min-height: calc(100vh - 114px - 511px)
 `
 const PageNotFound = styled.div`
   ${tw`flex items-center flex-1 max-w-screen-xl py-20 mx-auto mb-16`}
@@ -34,8 +32,6 @@ const Description = styled.p`
 const NotFoundPage = () => (
   <Layout>
     <SEO title="404: Not found" />
-    <Header />
-
     <StretchToFill>
       <PageNotFound>
         <Section>
@@ -47,7 +43,6 @@ const NotFoundPage = () => (
           </Description>
         </Section>
       </PageNotFound>
-      <Footer />
     </StretchToFill>
   </Layout>
 )

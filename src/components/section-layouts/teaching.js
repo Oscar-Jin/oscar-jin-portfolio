@@ -168,7 +168,7 @@ const localized = {
       ),
       customerTitle: (
         <Trans ns="index" native>
-          学生、クリエイター,
+          学生、クリエイター
         </Trans>
       ),
     },
