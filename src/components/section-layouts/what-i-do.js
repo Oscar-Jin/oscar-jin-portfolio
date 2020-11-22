@@ -101,7 +101,7 @@ const localized = {
         </Trans>
       ),
       button: (
-        <LinkButtonTeal to="/">
+        <LinkButtonTeal to="/works">
           <Trans ns="index" i18nKey="what-i-do.skills.1.button">
             My Works
           </Trans>
