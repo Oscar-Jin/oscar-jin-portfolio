@@ -1,0 +1,73 @@
+{
+  "projects": [
+    {
+      "imageName": "portfolio",
+      "title": "Oscar Jin Portfolio",
+      "category": "Gatsby, i18next",
+      "url": "http://oscar-jin.surge.sh",
+      "repository": "https://github.com/Oscar-Jin/oscar-jin-portfolio"
+    },
+    {
+      "imageName": "lacomsHub",
+      "title": "LACOMS-HUB",
+      "category": "React, PWA, Firebase",
+      "url": "https://lacoms-hub.herokuapp.com",
+      "repository": "https://github.com/Oscar-Jin/js-lacoms-hub"
+    },
+    {
+      "imageName": "studentCenter",
+      "title": "LACOMS Student Center",
+      "category": "React, TypeScript, PWA, Firebase",
+      "url": "https://preview-student-center.surge.sh",
+      "repository": "https://github.com/Oscar-Jin/ts-lacoms-student-center"
+    },
+    {
+      "imageName": "poleStar",
+      "title": "LACOMS Pole Star",
+      "category": "React, PWA, Firebase",
+      "url": "https://preview-pole-star.surge.sh",
+      "repository": "https://github.com/Oscar-Jin/v14-lacoms-production"
+    },
+    {
+      "imageName": "polarExpress",
+      "title": "LACOMS Polar Express",
+      "category": "React, TypeScript, PWA, Firebase",
+      "url": "https://preview-polar-express.surge.sh",
+      "repository": "https://github.com/Oscar-Jin/ts-lacoms-polar-express"
+    },
+    {
+      "imageName": "nxProfile",
+      "title": "NXProfile",
+      "category": "iOS, Swift",
+      "url": "",
+      "repository": "https://github.com/Oscar-Jin/NXProfile"
+    },
+    {
+      "imageName": "nxWorkspace",
+      "title": "NXWorkspace",
+      "category": "iOS, Swift",
+      "url": "",
+      "repository": "https://github.com/Oscar-Jin/NXWorkspace"
+    },
+    {
+      "imageName": "bentoApp",
+      "title": "Bento!",
+      "category": "iOS, Swift",
+      "url": "",
+      "repository": ""
+    },
+    {
+      "imageName": "checklist",
+      "title": "Checklist>",
+      "category": "iOS, Swift",
+      "url": "",
+      "repository": ""
+    },
+    {
+      "imageName": "studentAdmin",
+      "title": "生徒講師管理SUITE",
+      "category": "Spreadsheet, Google App Script",
+      "url": "https://docs.google.com/spreadsheets/d/1UEOt3BQ-Uy96RD2P7bNfFcq3XC6DiukRhnbwyYpJSQg/"
+    }
+  ]
+}
