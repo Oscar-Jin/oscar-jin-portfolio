@@ -7,6 +7,10 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-styled-components`,
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-postcss`,
+    `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -14,10 +18,6 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
-    `gatsby-plugin-styled-components`,
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-postcss`,
-    `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-plugin-react-i18next`,
       options: {
@@ -29,16 +29,16 @@ module.exports = {
           interpolation: {
             escapeValue: false, // not needed for react as it escapes by default
           },
-          keySeparator: false,
-          nsSeparator: false,
+          // keySeparator: false,
+          // nsSeparator: false,
         },
       },
     },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `Oscar Jin (@Kinchan) Portfolio`,
+        short_name: `Oscar Jin`,
         start_url: `/`,
         background_color: `#663399`,
         theme_color: `#663399`,
