@@ -1,76 +1,135 @@
 {
-  "25 years old guy living in Tokyo, Japan.": "25岁技术男现居于日本东京。",
-  "And More...": "还有...",
-  "Arts & Design": "设计&美术",
-  "Books": "书籍",
-  "Business & Management": "经营管理",
-  "Change by Design": "IDEO 设计改变一切",
-  "Checkout my awesome resume and start to connect with me!": "快看看我的简历，尽快与我联系吧！",
-  "Chinese": "中文",
-  "Code in Swift and JavaScript. JAMStack are his favorite.": "善于Swift和JavaScript编程。喜爱JAMStack。",
-  "Computer Science An Overview": "计算机科学综述",
-  "Connect": "联系",
-  "Designs": "设计",
-  "Dream <1>big.</1> No boundary.": "梦想<1>成真。</1>地球无边界。",
-  "English": "英语",
-  "Explore My Library": "我的书房",
-  "Extreme Ownership": "无所不在的领导力",
-  "Fanatic in graphic design.": "不一般的设计狂。",
-  "Find Out More": "了解更多",
-  "From Mobile to Desktop, the possibilities are endless. Need some new feature?": "从智能手机到台式电脑，无限搭配可能性。需要新的功能了么？",
-  "Good To Great": "从优秀到卓越",
-  "Great product comes with a greater user experience. Crappy UI? Not on my watch.": "好的产品需要卓越的客户体验。糟糕的UI？我不允许。",
-  "If you’re desperately seeking for someone who can bring out the best in your business. Look no further, you have found the right man.": "走遍天涯海角，寻找能为企业带来变革的人才？纵横驰骋，我值得你拥有。",
-  "Internationalization is hard. But if there is anything so called language barrier, now you’ve got the force to break it.": "国际化是个大难题。又在交流上碰壁了？在此获得超人般的力量，往后无需担忧。",
-  "Introduce": "介绍",
-  "Japanese": "日语",
-  "Leadership": "领导能力",
-  "Leaning into the unknown": "倾向无尽的潜能",
-  "Learn Enough To Be Dangerous": "Learn Enough To Be Dangerous",
-  "Meditations": "Meditations",
-  "Mindset": "Mindset",
-  "My Designs": "我的设计",
-  "My Strength": "我的能力",
-  "My Works": "我的作品",
-  "Neuropsychology": "神经心理学",
-  "One world, one <1>mind</1>.": "世界之大，一人<1>拥有</1>全部.",
-  "Oscar Jin (@Kinchan)": "Oscar Jin (@小金)",
-  "Oscar likes to spend many of his time on creative activities - like coding and styling website. He is passionate about learning. He is very proud of his work.": "Oscar（小金）喜欢在设计上下很大功夫。他很喜爱编程和艺术排版。经常会一整天学习新的知识。他对自己的作品经常会感到很骄傲。",
-  "Path to become an entrepreneur.": "在为以后创业而努力。",
-  "Philosophy": "哲学",
-  "Programming": "编程",
-  "Regardless of what I do, I try to always improve. That is why teaching is my second passion. They are not limited to my occupation, but also the language I speak, the books I read, tutorials I watch; all sort of materials I came across.": "无关我做任何事情，我都会想法设法提高自己。这就是为什么我经常会以教书的形式来获取更多的见解。无论任何知识，我都可以重新演绎。",
-  "Relentless, what it takes to become exceptional. With a great appetite to take in new skills, It will not be your typical developer who’s on the project.": "不懈的追求。对完美的执着。为了创造出卓越的作品，他的行动超乎你的期待。",
-  "Resume": "个人简历",
-  "Say hello to Oscar !": "嘿，Oscar！",
-  "Skills I am proud of": "技能与才华",
-  "Speak English, Japanese, Chinese and some bits of Korean.": "会说英语，日语和中文。还可以用韩国话来交流。",
-  "Spoken by 1.2 billion across the world.": "12亿人口的语言",
-  "Strive to <1>become</1> outstanding.": "刻苦<1>改变</1>一切事物",
-  "Talent is helpful. But knowledge is far more superior. Through self-education, reading books give us the power to explore the unknown territories.": "才华横溢。但是知识无边。从书中获得的知识，可以给予别人无限的力量。",
-  "Teaching": "教书",
-  "The Design of Everyday Things": "设计心理学",
-  "The Lean Startup": "精益创业",
-  "The Obstacle Is the Way": "The Obstacle Is the Way",
-  "The Principle of Neural Science": "神经科学原理",
-  "The Seven Habits of Highly Effective People": "高效能人士的七个习惯",
-  "The Startup Owner's Manual": "The Startup Owner's Manual",
-  "The Willpower Instinct": "自控力",
-  "The best <1>form</1> of learning.": "世界上<1>最佳</1>的学习方式",
-  "The language of 4.97 trillion GDP": "创造了4万9千亿美元的语言",
-  "Think and Grow Rich": "思考致富",
-  "UI / UX Design": "UI / UX 设计",
-  "Used in more than 80+ countries.": "80多的国家使用的语言",
-  "What I Do": "我的工作",
-  "What I Study": "我的知识",
-  "Works": "作品",
-  "iOS / Web Dev": "iOS / Web 开发",
-  "あやぱん": "あやぱん",
-  "とても助かりました！": "真的获得了很多的帮助！",
-  "わか": "わか",
-  "デザイナー、企画": "平面设计师",
-  "学生、クリエイター": "学生，剪辑师",
-  "金ちゃん先生教えるのとても上手いんです！CSSやJavaScriptについて色々と教わりました。とても簡単に解説してくれるのですごく助かります！": "（日文翻译）小金老师很会教书。我从他那里学到了有关CSS和JavaScript的知识。因为他的讲解很容易就懂，我真的很感谢他！",
-  "金ちゃん先生教えるの上手！色んなこと知ってるから話すの楽しい！今まで知らなかったことも分かるようになって、自分で成長を感じた。いつもありがとう！": "（日文翻译）小金老师真的好棒！他知道的东西真的好多啊。我很喜欢听他的讲课。我在他身上学到了很多知识。谢谢！",
-  "金ちゃん先生物知りで面白い!": "小金老师懂得好多！"
+  "dream-big": {
+    "heading": "梦想<1>成真。</1>地球无边界。",
+    "linkButton": "了解更多",
+    "paragraph": "走遍天涯海角，寻找能为企业带来变革的人才？纵横驰骋，我值得你拥有。",
+    "stripTitle": "技能与才华"
+  },
+  "get-started": {
+    "content": "快看看我的简历，尽快与我联系吧！",
+    "primaryLink": "简历",
+    "secondaryLink": "联系"
+  },
+  "introduce": {
+    "authorSignature": "Oscar Jin (@小金)",
+    "facts": {
+      "1": "可亲可爱的25岁技术男居住于日本东京。",
+      "2": "会说中文，英语，日语。还可以用韩语来交流。",
+      "3": "善于使用Swift和JavaScript。喜爱JAMStack。",
+      "4": "为了往后创业而时时都在努力。",
+      "5": "不一般的设计狂。"
+    },
+    "heading": "您好，小金！",
+    "profileDescription": "小金（Oscar）喜欢在设计上下很大功夫。他喜爱编程和艺术排版。有时会一整天都学习新的知识。他对自己的要求非常高，所以自己的作品经常让他感到很骄傲。",
+    "subheading": "介绍"
+  },
+  "my-strength": {
+    "heading": "世界之大，一人可<1>拥有</1>全部。",
+    "linkButton": "还有更多",
+    "paragraph": "国际化常常是个大难题。在交流上又碰壁了？您可在此拥有超人般的力量，走遍天涯毫无担忧。",
+    "spokenLanguages": {
+      "1": {
+        "description": "世界上50多国家在使用的语言。",
+        "name": "英语"
+      },
+      "2": {
+        "description": "13亿人口的首选语言。",
+        "name": "中文"
+      },
+      "3": {
+        "description": "创造了4万9千亿美元的语言。",
+        "name": "日语"
+      }
+    },
+    "subheading": "我的能力"
+  },
+  "teaching": {
+    "description": "无论任何事情，我都想法设法提高自己的能力。这也是为何我选择以教书的形式来获得更多的理解。无法向人们做出深入浅出的讲解，证明了个人知识的短缺。",
+    "heading": "世界上<1>最佳</1>的学习方式。",
+    "subHeading": "教书"
+  },
+  "testimonials": {
+    "1": {
+      "heading": "小金老师懂得好多超有意思！",
+      "quote": "（日文翻译）小金老师真的好棒！他知道的东西真的好多啊。我很喜欢听他的讲课。在他身上学到了很多知识呢。谢谢！",
+      "studentName": "わか",
+      "studentOccupation": "学生，视频剪辑师"
+    },
+    "2": {
+      "heading": "真的获得了很多的帮助！",
+      "quote": "（日文翻译）小金老师很会教书。我从他那里学到了有关CSS和JavaScript的知识。因为他的讲解很容易就懂，我真的很感谢他！",
+      "studentName": "あやぱん",
+      "studentOccupation": "平面设计师"
+    }
+  },
+  "what-I-study": {
+    "categories": {
+      "1": {
+        "books": {
+          "1": "从优秀到卓越",
+          "2": "高效能人士的七个习惯",
+          "3": "无所不在的领导力"
+        },
+        "title": "领导能力"
+      },
+      "2": {
+        "books": {
+          "1": "精益创业",
+          "2": "The Startup Owner's Manual"
+        },
+        "title": "商业管理"
+      },
+      "3": {
+        "books": {
+          "1": "Meditations",
+          "2": "思考致富",
+          "3": "The Obstacle Is the Way"
+        },
+        "title": "哲学"
+      },
+      "4": {
+        "books": {
+          "1": "IDEO 设计改变一切",
+          "2": "设计心理学"
+        },
+        "title": "艺术与设计"
+      },
+      "5": {
+        "books": {
+          "1": "计算机科学综述",
+          "2": "Learn Enough To Be Dangerous"
+        },
+        "title": "编程"
+      },
+      "6": {
+        "books": {
+          "1": "自控力",
+          "2": "Mindset",
+          "3": "神经科学原理"
+        },
+        "title": "神经心理学"
+      }
+    },
+    "description": "才华横溢。学海无涯。从书中获得的知识，可以为人生来无穷的力量。",
+    "heading": "倾向无尽的潜能。",
+    "linkButton": "我的藏书",
+    "subheading": "学识"
+  },
+  "what-i-do": {
+    "description": "不懈的追求。对完美的执着。为了创造出卓越的作品，他的行动经常超乎人们的期待。",
+    "heading": "争取完善，<1>改变</1>一切事物",
+    "skills": {
+      "1": {
+        "button": "我的作品",
+        "description": "从智能手机到台式电脑，无限的搭配带来无尽的可能性。需要新的功能了么？",
+        "title": "iOS / Web 开发"
+      },
+      "2": {
+        "button": "我的设计",
+        "description": "优秀的产品需要卓越的用户体验。糟糕的UI？我不允许的。",
+        "title": "UI / UX 设计"
+      }
+    },
+    "subHeading": "我的工作"
+  }
 }

@@ -1,76 +1,135 @@
 {
-  "25 years old guy living in Tokyo, Japan.": "日本、東京に住む２５才の男性",
-  "And More...": "更に詳しく",
-  "Arts & Design": "デザイン＆アート",
-  "Books": "書籍",
-  "Business & Management": "ビジネス＆マネジメント",
-  "Change by Design": "デザイン思考が世界を変える",
-  "Checkout my awesome resume and start to connect with me!": "私のレジュメを覗いてみよう！そして繋がろう！",
-  "Chinese": "中国語",
-  "Code in Swift and JavaScript. JAMStack are his favorite.": "SwiftとJavaScriptを用いた開発。JAMStackが得意分野。",
-  "Computer Science An Overview": "Computer Science An Overview",
-  "Connect": "繋がる",
-  "Designs": "デザイン",
-  "Dream <1>big.</1> No boundary.": "夢を<1>大きく</1>持とう。世界は無限大。",
-  "English": "英語",
-  "Explore My Library": "ライブリを開く",
-  "Extreme Ownership": "Extreme Ownership",
-  "Fanatic in graphic design.": "優れたデザインを常に追求する。",
-  "Find Out More": "詳しく見る",
-  "From Mobile to Desktop, the possibilities are endless. Need some new feature?": "モバイルからデスクトップまで、可能性は無限に広がる。新しい機能を搭載しますか？",
-  "Good To Great": "ビジョナリー・カンパニー 2",
-  "Great product comes with a greater user experience. Crappy UI? Not on my watch.": "優れたデザインはプロダクトに価値をもたらす。完璧なユーザー体験をどうぞ。",
-  "If you’re desperately seeking for someone who can bring out the best in your business. Look no further, you have found the right man.": "ビジネスの可能性を最大限に引き出す人材を探すため、世界の果てまで行こうと言うのなら。お待ちください、貴方の価値に見合う人材はここにいます。",
-  "Internationalization is hard. But if there is anything so called language barrier, now you’ve got the force to break it.": "グローバル化は難しい。あなたが今、もし言語の壁を感じているのなら、それを壊す力を手に入れたことを意味します。",
-  "Introduce": "紹介します",
-  "Japanese": "日本語",
-  "Leadership": "リーダーシップ",
-  "Leaning into the unknown": "秘められた可能性を求めて",
-  "Learn Enough To Be Dangerous": "Learn Enough To Be Dangerous",
-  "Meditations": "Meditations",
-  "Mindset": "マインドセット",
-  "My Designs": "デザインを見る",
-  "My Strength": "私の強み",
-  "My Works": "プロダクトを見る",
-  "Neuropsychology": "神経心理学",
-  "One world, one <1>mind</1>.": "一つの世界、一つの<1>マインド</1>に。",
-  "Oscar Jin (@Kinchan)": "Oscar Jin (@金ちゃん)",
-  "Oscar likes to spend many of his time on creative activities - like coding and styling website. He is passionate about learning. He is very proud of his work.": "金ちゃん（Oscar Jin）は多くの時間をクリエイティブな活動に使う。だからいつも面白いサイトを作ったり、色んなものをデザインするのだ。勉強するのも好きだから、いつも夢中になる。満足行くまで休まない性格。",
-  "Path to become an entrepreneur.": "将来起業するために今は常に学んでいる。",
-  "Philosophy": "哲学",
-  "Programming": "プログラミング",
-  "Regardless of what I do, I try to always improve. That is why teaching is my second passion. They are not limited to my occupation, but also the language I speak, the books I read, tutorials I watch; all sort of materials I came across.": "全ての面において、更なるステージを求め続ける。だから人に教えることを私は選択する。それは私の話す言語だけでなく、さまざまなメディアで得た知識を分解し、再構築する。",
-  "Relentless, what it takes to become exceptional. With a great appetite to take in new skills, It will not be your typical developer who’s on the project.": "絶え間ない努力、それが最高を目指す人間の取るべき態度だ。常に情報を収集し、知識を獲得する。彼は、あなたの想像を超える。",
-  "Resume": "履歴書",
-  "Say hello to Oscar !": "こんにちは、金ちゃん",
-  "Skills I am proud of": "厳選されたスキル",
-  "Speak English, Japanese, Chinese and some bits of Korean.": "英語、日本語、中国語を話し、韓国語も理解可能。",
-  "Spoken by 1.2 billion across the world.": "12億の人口によって話されている。",
-  "Strive to <1>become</1> outstanding.": "優れた貢献のために、<1>努力</1>を惜しまない",
-  "Talent is helpful. But knowledge is far more superior. Through self-education, reading books give us the power to explore the unknown territories.": "才能という言葉がある。私はそれを信じない。才能とは、努力した人間が得た結果。それは絶え間ない学習精神なのである。",
-  "Teaching": "教えること",
-  "The Design of Everyday Things": "誰のためのデザイン？",
-  "The Lean Startup": "リーン・スタートアップ",
-  "The Obstacle Is the Way": "The Obstacle Is the Way",
-  "The Principle of Neural Science": "カンデル神経科学",
-  "The Seven Habits of Highly Effective People": "7つの習慣 人格主義の回復",
-  "The Startup Owner's Manual": "スタートアップ・マニュアル",
-  "The Willpower Instinct": "スタンフォードの自分を変える教室",
-  "The best <1>form</1> of learning.": "一番<1>賢い</1>学び方",
-  "The language of 4.97 trillion GDP": "4.97兆ドルを生み出した言語",
-  "Think and Grow Rich": "思考は現実化する",
-  "UI / UX Design": "UI / UXデザイン",
-  "Used in more than 80+ countries.": "80+もの国々で話されている",
-  "What I Do": "能力",
-  "What I Study": "知識の範囲",
-  "Works": "プロジェクト",
-  "iOS / Web Dev": "iOS / ウェブ開発",
-  "あやぱん": "あやぱん",
-  "とても助かりました！": "とても助かりました！",
-  "わか": "わか",
-  "デザイナー、企画": "デザイナー、企画",
-  "学生、クリエイター": "学生、クリエイター",
-  "金ちゃん先生教えるのとても上手いんです！CSSやJavaScriptについて色々と教わりました。とても簡単に解説してくれるのですごく助かります！": "金ちゃん先生教えるのとても上手いんです！CSSやJavaScriptについて色々と教わりました。とても簡単に解説してくれるのですごく助かります！",
-  "金ちゃん先生教えるの上手！色んなこと知ってるから話すの楽しい！今まで知らなかったことも分かるようになって、自分で成長を感じた。いつもありがとう！": "金ちゃん先生教えるの上手！色んなこと知ってるから話すの楽しい！今まで知らなかったことも分かるようになって、自分で成長を感じた。いつもありがとう！",
-  "金ちゃん先生物知りで面白い!": "金ちゃん先生物知りで面白い!"
+  "dream-big": {
+    "heading": "夢を<1>大きく</1>抱こう。世界は無限に広い。",
+    "linkButton": "詳しく見る",
+    "paragraph": "ビジネスの可能性を最大限に引き出す人材をお探しでしたら、お待ちください。貴方の期待を凌駕する人をここでお会いしましょう。",
+    "stripTitle": "洗練されたスキル"
+  },
+  "get-started": {
+    "content": "私の履歴書を覗いてみよう！そして私と繋がりましょう！",
+    "primaryLink": "履歴書",
+    "secondaryLink": "繋がる"
+  },
+  "introduce": {
+    "authorSignature": "Oscar Jin (@金ちゃん)",
+    "facts": {
+      "1": "東京近郊に住む笑顔で優しい性格を持つ、２５歳の男性。",
+      "2": "語学が堪能で、英語、日本語、中国語を話し、韓国語も理解できる。",
+      "3": "SwiftとJavaScriptを用いた開発ができ、最新のJAMStackが得意分野。",
+      "4": "ベンチャー企業を立ち上げ、世界を相手にする夢を持つ。",
+      "5": "美しいデザインの熱狂的ファンである。"
+    },
+    "heading": "こんにちは、金ちゃん！",
+    "profileDescription": "金ちゃん（Oscar Jin）はクリエイティブなことが大好き。面白いサイトを作ったり、色んなものをデザインしてみる。勉強することも大好きだから、何かしら夢中になってしまう。寿司が大の好物。",
+    "subheading": "紹介します"
+  },
+  "my-strength": {
+    "heading": "一つの世界、一つの<1>マインド</1>。",
+    "linkButton": "もっとあります",
+    "paragraph": "グローバル化は難しい。もし言語と言う壁があなたの行く手をさえぎるのなら、それを壊す力を手に入れませんか？",
+    "spokenLanguages": {
+      "1": {
+        "description": "世界58の国と21の地域で話されている。",
+        "name": "英語"
+      },
+      "2": {
+        "description": "13億の人口を持つ国際機関の公用語。",
+        "name": "中国語"
+      },
+      "3": {
+        "description": "4.97兆ドルを生み出した技術大国の言語。",
+        "name": "日本語"
+      }
+    },
+    "subheading": "私の強み"
+  },
+  "teaching": {
+    "description": "更なる成長をするために、何を行えば良いのか。私は人々に教えることを選択する。それは自分にとっての学びでもあり、人生をより豊かにしてくれるもの。知識は、分かち合ってこそ、価値が生まれる。",
+    "heading": "一番<1>賢い</1>学び方。",
+    "subHeading": "教えること"
+  },
+  "testimonials": {
+    "1": {
+      "heading": "金ちゃん先生物知りで面白い!",
+      "quote": "金ちゃん先生教えるの上手！色んなこと知ってるから話すの楽しい！今まで知らなかったことも分かるようになって、自分で成長を感じた。いつもありがとう！",
+      "studentName": "わか",
+      "studentOccupation": "学生、クリエイター"
+    },
+    "2": {
+      "heading": "とても助かりました！",
+      "quote": "金ちゃん先生教えるのとても上手いんです！CSSやJavaScriptについて色々と教わりました。とても簡単に解説してくれるのですごく助かります！",
+      "studentName": "あやぱん",
+      "studentOccupation": "デザイナー、企画"
+    }
+  },
+  "what-I-study": {
+    "categories": {
+      "1": {
+        "books": {
+          "1": "ビジョナリー・カンパニー 2",
+          "2": "7つの習慣",
+          "3": "Extreme Ownership"
+        },
+        "title": "リーダーシップ"
+      },
+      "2": {
+        "books": {
+          "1": "リーン・スタートアップ",
+          "2": "スタートアップ・マニュアル"
+        },
+        "title": "ビジネス＆マネジメント"
+      },
+      "3": {
+        "books": {
+          "1": "Meditations",
+          "2": "思考は現実化する",
+          "3": "The Obstacle Is the Way"
+        },
+        "title": "哲学"
+      },
+      "4": {
+        "books": {
+          "1": "デザイン思考が世界を変える",
+          "2": "誰のためのデザイン"
+        },
+        "title": "芸術＆デザイン"
+      },
+      "5": {
+        "books": {
+          "1": "Computer Science An Overview",
+          "2": "Learn Enough To Be Dangerous"
+        },
+        "title": "プログラミング"
+      },
+      "6": {
+        "books": {
+          "1": "スタンフォードの自分を変える教室",
+          "2": "マインドセット",
+          "3": "カンデル神経科学"
+        },
+        "title": "神経心理学 "
+      }
+    },
+    "description": "才能は役に立つ。しかしそれだけでは不十分だ。知識ほど人生に豊かさをもたらすものはない。混沌とした世界で、唯一進むべき道を示してくれる。継続的な学習こそ、自分を高める唯一の選択なのである。",
+    "heading": "秘められた可能性を求めて。",
+    "linkButton": "ライブリを開く",
+    "subheading": "知識と学習"
+  },
+  "what-i-do": {
+    "description": "絶え間ない努力、それが最高を目指す人の取るべき行動である。現状に一切満足せず、新しい領域へ常に突き進むことで、新たな可能性を切り開いていく。",
+    "heading": "優れた貢献のために、<1>努力</1>を惜しまない。",
+    "skills": {
+      "1": {
+        "button": "私の作品",
+        "description": "モバイルからデスクトップまで、可能性は無限に広がる。新しい機能を搭載しませんか？",
+        "title": "iOS / Web 開発"
+      },
+      "2": {
+        "button": "私のデザイン",
+        "description": "良いプロダクトには優れたデザインが不可欠だ。最高なユーザー体験をぜひどうぞ。",
+        "title": "UI / UX デザイン"
+      }
+    },
+    "subHeading": "能力"
+  }
 }

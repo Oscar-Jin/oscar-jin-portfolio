@@ -1,76 +1,135 @@
 {
-  "25 years old guy living in Tokyo, Japan.": "25 years old guy living in Tokyo, Japan.",
-  "And More...": "まだあります",
-  "Arts & Design": "Arts & Design",
-  "Books": "Books",
-  "Business & Management": "Business & Management",
-  "Change by Design": "Change by Design",
-  "Checkout my awesome resume and start to connect with me!": "Checkout my awesome resume and start to connect with me!",
-  "Chinese": "Chinese",
-  "Code in Swift and JavaScript. JAMStack are his favorite.": "Code in Swift and JavaScript. JAMStack are his favorite.",
-  "Computer Science An Overview": "Computer Science An Overview",
-  "Connect": "Connect",
-  "Designs": "Designs",
-  "Dream <1>big.</1> No boundary.": "Dream <1>big.</1> No boundary.",
-  "English": "English",
-  "Explore My Library": "Explore My Library",
-  "Extreme Ownership": "Extreme Ownership",
-  "Fanatic in graphic design.": "Fanatic in graphic design.",
-  "Find Out More": "Find Out More",
-  "From Mobile to Desktop, the possibilities are endless. Need some new feature?": "From Mobile to Desktop, the possibilities are endless. Need some new feature?",
-  "Good To Great": "Good To Great",
-  "Great product comes with a greater user experience. Crappy UI? Not on my watch.": "Great product comes with a greater user experience. Crappy UI? Not on my watch.",
-  "If you’re desperately seeking for someone who can bring out the best in your business. Look no further, you have found the right man.": "If you’re desperately seeking for someone who can bring out the best in your business. Look no further, you have found the right man.",
-  "Internationalization is hard. But if there is anything so called language barrier, now you’ve got the force to break it.": "Internationalization is hard. But if there is anything so called language barrier, now you’ve got the force to break it.",
-  "Introduce": "Introduce",
-  "Japanese": "Japanese",
-  "Leadership": "Leadership",
-  "Leaning into the unknown": "Leaning into the unknown",
-  "Learn Enough To Be Dangerous": "Learn Enough To Be Dangerous",
-  "Meditations": "Meditations",
-  "Mindset": "Mindset",
-  "My Designs": "My Designs",
-  "My Strength": "My Strength",
-  "My Works": "My Works",
-  "Neuropsychology": "Neuropsychology",
-  "One world, one <1>mind</1>.": "One world, one <1>mind</1>.",
-  "Oscar Jin (@Kinchan)": "Oscar Jin (@Kinchan)",
-  "Oscar likes to spend many of his time on creative activities - like coding and styling website. He is passionate about learning. He is very proud of his work.": "Oscar likes to spend many of his time on creative activities - like coding and styling website. He is passionate about learning. He is very proud of his work.",
-  "Path to become an entrepreneur.": "Path to become an entrepreneur.",
-  "Philosophy": "Philosophy",
-  "Programming": "Programming",
-  "Regardless of what I do, I try to always improve. That is why teaching is my second passion. They are not limited to my occupation, but also the language I speak, the books I read, tutorials I watch; all sort of materials I came across.": "Regardless of what I do, I try to always improve. That is why teaching is my second passion. They are not limited to my occupation, but also the language I speak, the books I read, tutorials I watch; all sort of materials I came across.",
-  "Relentless, what it takes to become exceptional. With a great appetite to take in new skills, It will not be your typical developer who’s on the project.": "Relentless, what it takes to become exceptional. With a great appetite to take in new skills, It will not be your typical developer who’s on the project.",
-  "Resume": "Resume",
-  "Say hello to Oscar !": "Say hello to Oscar !",
-  "Skills I am proud of": "Skills I am proud of",
-  "Speak English, Japanese, Chinese and some bits of Korean.": "Speak English, Japanese, Chinese and some bits of Korean.",
-  "Spoken by 1.2 billion across the world.": "Spoken by 1.2 billion across the world.",
-  "Strive to <1>become</1> outstanding.": "Strive to <1>become</1> outstanding.",
-  "Talent is helpful. But knowledge is far more superior. Through self-education, reading books give us the power to explore the unknown territories.": "Talent is helpful. But knowledge is far more superior. Through self-education, reading books give us the power to explore the unknown territories.",
-  "Teaching": "Teaching",
-  "The Design of Everyday Things": "The Design of Everyday Things",
-  "The Lean Startup": "The Lean Startup",
-  "The Obstacle Is the Way": "The Obstacle Is the Way",
-  "The Principle of Neural Science": "The Principle of Neural Science",
-  "The Seven Habits of Highly Effective People": "The Seven Habits of Highly Effective People",
-  "The Startup Owner's Manual": "The Startup Owner's Manual",
-  "The Willpower Instinct": "The Willpower Instinct",
-  "The best <1>form</1> of learning.": "The best <1>form</1> of learning.",
-  "The language of 4.97 trillion GDP": "The language of 4.97 trillion GDP",
-  "Think and Grow Rich": "Think and Grow Rich",
-  "UI / UX Design": "UI / UX Design",
-  "Used in more than 80+ countries.": "Used in more than 80+ countries.",
-  "What I Do": "What I Do",
-  "What I Study": "What I Study",
-  "Works": "Works",
-  "iOS / Web Dev": "iOS / Web Dev",
-  "あやぱん": "あやぱん",
-  "とても助かりました！": "とても助かりました！",
-  "わか": "わか",
-  "デザイナー、企画": "Producer, Designer",
-  "学生、クリエイター": "Student, Creator",
-  "金ちゃん先生教えるのとても上手いんです！CSSやJavaScriptについて色々と教わりました。とても簡単に解説してくれるのですごく助かります！": "金ちゃん先生教えるのとても上手いんです！CSSやJavaScriptについて色々と教わりました。とても簡単に解説してくれるのですごく助かります！",
-  "金ちゃん先生教えるの上手！色んなこと知ってるから話すの楽しい！今まで知らなかったことも分かるようになって、自分で成長を感じた。いつもありがとう！": "金ちゃん先生教えるの上手！色んなこと知ってるから話すの楽しい！今まで知らなかったことも分かるようになって、自分で成長を感じた。いつもありがとう！",
-  "金ちゃん先生物知りで面白い!": "金ちゃん先生物知りで面白い!"
+  "dream-big": {
+    "heading": "Dream <1>big.</1> No boundary.",
+    "linkButton": "Find Out More",
+    "paragraph": "If you’re desperately seeking for someone who can bring out the best in your business. Look no further, you have found the right man.",
+    "stripTitle": "Skills I am proud of"
+  },
+  "get-started": {
+    "content": "Checkout my awesome resume and start to connect with me!",
+    "primaryLink": "Resume",
+    "secondaryLink": "Connect"
+  },
+  "introduce": {
+    "authorSignature": "Oscar Jin (@Kinchan)",
+    "facts": {
+      "1": "25 years old guy happily living in Tokyo, Japan.",
+      "2": "Speaks English, Japanese, Chinese and some bits of Korean.",
+      "3": "Code in Swift and JavaScript. JAMStack are his favorite.",
+      "4": "Working toward the goal to become an entrepreneur and get ready to change the world.",
+      "5": "Fanatic in graphic design."
+    },
+    "heading": "Say hello to Oscar !",
+    "profileDescription": "Oscar likes to spend many of his time on creative activities - like coding and styling website. He is passionate about learning. He is very proud of his work.",
+    "subheading": "Introduce"
+  },
+  "my-strength": {
+    "heading": "One world, one <1>mind</1>.",
+    "linkButton": "And More",
+    "paragraph": "Internationalization is hard. But if there is anything so called language barrier, now you’ve got the power to break it.",
+    "spokenLanguages": {
+      "1": {
+        "description": "Used in more than 58+ countries.",
+        "name": "English"
+      },
+      "2": {
+        "description": "Spoken by 1.3 billion across the world.",
+        "name": "Chinese"
+      },
+      "3": {
+        "description": "The language of 4.97 trillion GDP",
+        "name": "Japanese"
+      }
+    },
+    "subheading": "My Strength"
+  },
+  "teaching": {
+    "description": "Regardless of what I do, I try to always improve. That is why teaching is my second passion. They are not limited to my occupation, but also the language I speak, the books I read, tutorials I watch; all sort of materials I came across.",
+    "heading": "The best <1>form</1> of learning.",
+    "subHeading": "Teaching"
+  },
+  "testimonials": {
+    "1": {
+      "heading": "Kinchan has so much fun!",
+      "quote": "(Translated from Japanese) Kinchan is so good at teaching! He really knows a lot and that offers so much fun to just listen to his stories. I leaned a lot from him. Thank you so much!",
+      "studentName": "わか",
+      "studentOccupation": "Student, Editor"
+    },
+    "2": {
+      "heading": "He helped me a lot!",
+      "quote": "(Translated from Japanese) Kinchan is really good at teaching. I leaned from him about CSS and JavaScript. He offered detailed explanations and it was very easy to understand. It was a tremendous help for me.",
+      "studentName": "あやぱん",
+      "studentOccupation": "Designer"
+    }
+  },
+  "what-I-study": {
+    "categories": {
+      "1": {
+        "books": {
+          "1": "Good To Great",
+          "2": "The Seven Habits of Highly Effective People",
+          "3": "Extreme Ownership"
+        },
+        "title": "Leadership"
+      },
+      "2": {
+        "books": {
+          "1": "The Lean Startup",
+          "2": "The Startup Owner's Manual"
+        },
+        "title": "Business & Management"
+      },
+      "3": {
+        "books": {
+          "1": "Meditations",
+          "2": "Think and Grow Rich",
+          "3": "The Obstacle Is the Way"
+        },
+        "title": "Philosophy"
+      },
+      "4": {
+        "books": {
+          "1": "Change by Design",
+          "2": "The Design of Everyday Things"
+        },
+        "title": "Arts & Design"
+      },
+      "5": {
+        "books": {
+          "1": "Computer Science An Overview",
+          "2": "Learn Enough To Be Dangerous"
+        },
+        "title": "Programming"
+      },
+      "6": {
+        "books": {
+          "1": "The Willpower Instinct",
+          "2": "Mindset",
+          "3": "The Principle of Neural Science"
+        },
+        "title": "Neuropsychology"
+      }
+    },
+    "description": "Talent is helpful. But knowledge is far more superior. Through self-education, reading books give us the power to explore the unknown territories.",
+    "heading": "Leaning into the unknown",
+    "linkButton": "Explore My Library",
+    "subheading": "What I Study"
+  },
+  "what-i-do": {
+    "description": "Relentless, what it takes to become exceptional. With a great appetite to take in new skills, It will not be your typical developer who’s on the project.",
+    "heading": "Strive to <1>become</1> outstanding.",
+    "skills": {
+      "1": {
+        "button": "My Works",
+        "description": "From Mobile to Desktop, the possibilities are endless. Need some new feature?",
+        "title": "iOS / Web Dev"
+      },
+      "2": {
+        "button": "My Designs",
+        "description": "Great product comes with a greater user experience. Crappy UI? Not on my watch.",
+        "title": "UI / UX Design"
+      }
+    },
+    "subHeading": "What I Do"
+  }
 }
