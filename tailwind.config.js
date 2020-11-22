@@ -3,7 +3,7 @@ module.exports = {
     // removeDeprecatedGapUtilities: true,
     // purgeLayersByDefault: true,
   },
-  purge: [],
+  purge: ["./src/**/*.js", "./src/**/*.jsx", "./src/**/*.ts", "./src/**/*.tsx"],
   theme: {
     extend: {
       colors: {
@@ -33,12 +33,21 @@ module.exports = {
       },
       fontFamily: {
         display: ["Inter", "system-ui"],
+        chinese: ["Noto Sans SC", "sans-serif"],
       },
       opacity: {
         0: "0",
         5: "0.05",
         10: "0.1",
         15: "0.15",
+      },
+      spacing: {
+        px: "1px",
+        72: "18rem",
+        80: "20rem",
+        96: "24rem",
+        128: "32rem",
+        144: "36rem",
       },
     },
   },
