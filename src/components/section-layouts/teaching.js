@@ -106,17 +106,17 @@ const RightArrow = styled(BiRightArrowAlt)`
 //  ────────────────────────────────────────────────────────── localize ───┐
 const localized = {
   subHeading: (
-    <Trans ns="index" native>
+    <Trans ns="index" i18nKey="teaching.subHeading">
       Teaching
     </Trans>
   ),
   heading: (
-    <Trans ns="index" native>
+    <Trans ns="index" i18nKey="teaching.heading">
       The best <Highlight>form</Highlight> of learning.
     </Trans>
   ),
   description: (
-    <Trans ns="index" native>
+    <Trans ns="index" i18nKey="teaching.description">
       Regardless of what I do, I try to always improve. That is why teaching is
       my second passion. They are not limited to my occupation, but also the
       language I speak, the books I read, tutorials I watch; all sort of
@@ -126,49 +126,49 @@ const localized = {
   testimonials: [
     {
       stars: 5,
-      profileImageSrc: womanLonghair,
+      profileImageSrc: woman,
       heading: (
-        <Trans ns="index" native>
-          とても助かりました！
+        <Trans ns="index" i18nKey="testimonials.1.heading">
+          金ちゃん先生物知りで面白い!
         </Trans>
       ),
       quote: (
-        <Trans ns="index" native>
-          金ちゃん先生教えるのとても上手いんです！CSSやJavaScriptについて色々と教わりました。とても簡単に解説してくれるのですごく助かります！
+        <Trans ns="index" i18nKey="testimonials.1.quote">
+          金ちゃん先生教えるの上手！色んなこと知ってるから話すの楽しい！今まで知らなかったことも分かるようになって、自分で成長を感じた。いつもありがとう！
         </Trans>
       ),
-      customerName: (
-        <Trans ns="index" native>
-          あやぱん
+      studentName: (
+        <Trans ns="index" i18nKey="testimonials.1.studentName">
+          わか
         </Trans>
       ),
-      customerTitle: (
-        <Trans ns="index" native>
-          デザイナー、企画
+      studentOccupation: (
+        <Trans ns="index" i18nKey="testimonials.1.studentOccupation">
+          学生、クリエイター
         </Trans>
       ),
     },
     {
       stars: 5,
-      profileImageSrc: woman,
+      profileImageSrc: womanLonghair,
       heading: (
-        <Trans ns="index" native>
-          金ちゃん先生物知りで面白い!
+        <Trans ns="index" i18nKey="testimonials.2.heading">
+          とても助かりました！
         </Trans>
       ),
       quote: (
-        <Trans ns="index" native>
-          金ちゃん先生教えるの上手！色んなこと知ってるから話すの楽しい！今まで知らなかったことも分かるようになって、自分で成長を感じた。いつもありがとう！
+        <Trans ns="index" i18nKey="testimonials.2.quote">
+          金ちゃん先生教えるのとても上手いんです！CSSやJavaScriptについて色々と教わりました。とても簡単に解説してくれるのですごく助かります！
         </Trans>
       ),
-      customerName: (
-        <Trans ns="index" native>
-          わか
+      studentName: (
+        <Trans ns="index" i18nKey="testimonials.2.studentName">
+          あやぱん
         </Trans>
       ),
-      customerTitle: (
-        <Trans ns="index" native>
-          学生、クリエイター
+      studentOccupation: (
+        <Trans ns="index" i18nKey="testimonials.2.studentOccupation">
+          デザイナー、企画
         </Trans>
       ),
     },
@@ -207,8 +207,10 @@ export default function Teaching() {
                         src={testimonial.profileImageSrc}
                       />
                       <StudentTextInfo>
-                        <StudentName>{testimonial.customerName}</StudentName>
-                        <StudentTitle>{testimonial.customerTitle}</StudentTitle>
+                        <StudentName>{testimonial.studentName}</StudentName>
+                        <StudentTitle>
+                          {testimonial.studentOccupation}
+                        </StudentTitle>
                       </StudentTextInfo>
                     </StudentInfo>
                     <Controls>

@@ -1,10 +1,11 @@
 //  ──────────────────────────────────────────────────────────── import ───┐
 import React from "react"
 import tw, { styled } from "twin.macro"
-import { AiFillGithub, AiOutlineMail } from "react-icons/ai"
 import { SiLine } from "react-icons/si"
-import { Link } from "gatsby"
 import logoLight from "../../images/logo-light.svg"
+import { Link, Trans } from "gatsby-plugin-react-i18next"
+import { AiFillGithub, AiOutlineMail } from "react-icons/ai"
+
 // <───────────────────────────────────────────────────────────────────────┘
 
 //  ────────────────────────────────────────────────────────── tailwind ───┐
@@ -70,16 +71,24 @@ export default function Footer() {
             <ColumnHeading>Main</ColumnHeading>
             <LinkList>
               <LinkListItem>
-                <NavLink to="/">Books</NavLink>
+                <NavLink to="/">
+                  <Trans ns="nav">Books</Trans>
+                </NavLink>
               </LinkListItem>
               <LinkListItem>
-                <NavLink to="/">Works</NavLink>
+                <NavLink to="/works">
+                  <Trans ns="nav">Works</Trans>
+                </NavLink>
               </LinkListItem>
               <LinkListItem>
-                <NavLink to="/">Design</NavLink>
+                <NavLink to="/">
+                  <Trans ns="nav">Designs</Trans>
+                </NavLink>
               </LinkListItem>
               <LinkListItem>
-                <NavLink to="/">Connect</NavLink>
+                <NavLink to="/">
+                  <Trans ns="nav">Connect</Trans>
+                </NavLink>
               </LinkListItem>
             </LinkList>
           </Column>
@@ -116,9 +125,6 @@ export default function Footer() {
           Freepik
         </a>
         {" from "}
-        <a href="https://www.flaticon.com/" title="Flaticon">
-          www.flaticon.com
-        </a>
       </div>
     </Container>
   )

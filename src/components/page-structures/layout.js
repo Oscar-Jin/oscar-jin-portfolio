@@ -7,11 +7,12 @@ import PropTypes from "prop-types"
 import useInView from "use-in-view"
 import { motion } from "framer-motion"
 import "../../styles/tailwind.css"
+import { useI18next } from "gatsby-plugin-react-i18next"
 //  <───────────────────────────────────────────────────────────────────────┘
 
 //  ────────────────────────────────────────────────────────── tailwind ───┐
 const Container = styled.div`
-  ${tw`min-h-screen p-8 overflow-hidden font-display text-secondary-500`}
+  ${tw`min-h-screen p-8 overflow-hidden text-secondary-500`}
 `
 // <───────────────────────────────────────────────────────────────────────┘
 
@@ -47,8 +48,10 @@ Site.propTypes = {
 }
 
 function Site({ children }) {
+  const { language } = useI18next()
+
   return (
-    <Container>
+    <Container className={language === "zh" ? "font-chinese" : "font-display"}>
       <Header />
       {children}
       <Footer />

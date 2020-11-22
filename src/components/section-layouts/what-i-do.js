@@ -71,17 +71,17 @@ const LinkButtonRed = styled(Link)`
 //  ────────────────────────────────────────────────────────── localize ───┐
 const localized = {
   subHeading: (
-    <Trans ns="index" native>
+    <Trans ns="index" i18nKey="what-i-do.subHeading">
       What I Do
     </Trans>
   ),
   heading: (
-    <Trans ns="index" native>
+    <Trans ns="index" i18nKey="what-i-do.heading">
       Strive to <Highlight>become</Highlight> outstanding.
     </Trans>
   ),
   description: (
-    <Trans ns="index" native>
+    <Trans ns="index" i18nKey="what-i-do.description">
       Relentless, what it takes to become exceptional. With a great appetite to
       take in new skills, It will not be your typical developer who’s on the
       project.
@@ -90,19 +90,19 @@ const localized = {
   skills: [
     {
       title: (
-        <Trans ns="index" native>
+        <Trans ns="index" i18nKey="what-i-do.skills.1.title">
           iOS / Web Dev
         </Trans>
       ),
       description: (
-        <Trans ns="index" native>
+        <Trans ns="index" i18nKey="what-i-do.skills.1.description">
           From Mobile to Desktop, the possibilities are endless. Need some new
           feature?
         </Trans>
       ),
       button: (
         <LinkButtonTeal to="/">
-          <Trans ns="index" native>
+          <Trans ns="index" i18nKey="what-i-do.skills.1.button">
             My Works
           </Trans>
         </LinkButtonTeal>
@@ -111,19 +111,19 @@ const localized = {
     },
     {
       title: (
-        <Trans ns="index" native>
+        <Trans ns="index" i18nKey="what-i-do.skills.2.title">
           UI / UX Design
         </Trans>
       ),
       description: (
-        <Trans ns="index" native>
+        <Trans ns="index" i18nKey="what-i-do.skills.2.description">
           Great product comes with a greater user experience. Crappy UI? Not on
           my watch.
         </Trans>
       ),
       button: (
         <LinkButtonRed to="/">
-          <Trans ns="index" native>
+          <Trans ns="index" i18nKey="what-i-do.skills.2.button">
             My Designs
           </Trans>
         </LinkButtonRed>

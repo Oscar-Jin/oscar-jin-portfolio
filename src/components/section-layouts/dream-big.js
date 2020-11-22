@@ -50,23 +50,23 @@ const Illustration = styled.img`
 //  ────────────────────────────────────────────────────────── localize ───┐
 const localized = {
   heading: (
-    <Trans ns="index" native>
+    <Trans ns="index" i18nKey="dream-big.heading">
       Dream <Highlight>big.</Highlight> No boundary.
     </Trans>
   ),
   paragraph: (
-    <Trans ns="index" native>
+    <Trans ns="index" i18nKey="dream-big.paragraph">
       If you’re desperately seeking for someone who can bring out the best in
       your business. Look no further, you have found the right man.
     </Trans>
   ),
   linkButton: (
-    <Trans ns="index" native>
+    <Trans ns="index" i18nKey="dream-big.linkButton">
       Find Out More
     </Trans>
   ),
   stripTitle: (
-    <Trans ns="index" native>
+    <Trans ns="index" i18nKey="dream-big.stripTitle">
       Skills I am proud of
     </Trans>
   ),
@@ -93,7 +93,7 @@ export default function DreamBig() {
         <LeftColumn>
           <Heading>{localized.heading}</Heading>
           <Paragraph>{localized.paragraph}</Paragraph>
-          <LinkButton to="/">{localized.linkButton}</LinkButton>
+          <LinkButton to="/why-oscar">{localized.linkButton}</LinkButton>
           <LogoStrip>
             <StripTitle>{localized.stripTitle}</StripTitle>
             <StripImage fluid={data?.file?.childImageSharp?.fluid} />

@@ -44,17 +44,17 @@ const SecondaryLink = styled(LinkBase)`
 //  ────────────────────────────────────────────────────────── localize ───┐
 const localized = {
   content: (
-    <Trans ns="index" native>
+    <Trans ns="index" i18nKey="get-started.content">
       Checkout my awesome resume and start to connect with me!
     </Trans>
   ),
   primaryLink: (
-    <Trans ns="index" native>
+    <Trans ns="index" i18nKey="get-started.primaryLink">
       Resume
     </Trans>
   ),
   secondaryLink: (
-    <Trans ns="index" native>
+    <Trans ns="index" i18nKey="get-started.secondaryLink">
       Connect
     </Trans>
   ),

@@ -98,41 +98,41 @@ const BlobTwo = () => (
 //  ────────────────────────────────────────────────────────── localize ───┐
 const localized = {
   subheading: (
-    <Trans ns="index" native>
+    <Trans ns="index" i18nKey="introduce.subheading">
       Introduce
     </Trans>
   ),
   heading: (
-    <Trans ns="index" native>
+    <Trans ns="index" i18nKey="introduce.heading">
       Say hello to Oscar !
     </Trans>
   ),
   profileDescription: (
-    <Trans ns="index" native>
+    <Trans ns="index" i18nKey="introduce.profileDescription">
       Oscar likes to spend many of his time on creative activities - like coding
       and styling website. He is passionate about learning. He is very proud of
       his work.
     </Trans>
   ),
   authorSignature: (
-    <Trans ns="index" native>
+    <Trans ns="index" i18nKey="introduce.authorSignature">
       Oscar Jin (@Kinchan)
     </Trans>
   ),
   facts: [
-    <Trans ns="index" native key="01">
+    <Trans ns="index" i18nKey="introduce.facts.1" key="01">
       25 years old guy living in Tokyo, Japan.
     </Trans>,
-    <Trans ns="index" native key="02">
+    <Trans ns="index" i18nKey="introduce.facts.2" key="02">
       Speak English, Japanese, Chinese and some bits of Korean.
     </Trans>,
-    <Trans ns="index" native key="03">
+    <Trans ns="index" i18nKey="introduce.facts.3" key="03">
       Code in Swift and JavaScript. JAMStack are his favorite.
     </Trans>,
-    <Trans ns="index" native key="04">
+    <Trans ns="index" i18nKey="introduce.facts.4" key="04">
       Path to become an entrepreneur.
     </Trans>,
-    <Trans ns="index" native key="05">
+    <Trans ns="index" i18nKey="introduce.facts.5" key="05">
       Fanatic in graphic design.
     </Trans>,
   ],

@@ -69,17 +69,17 @@ const ListDescription = styled.p`
 //  ────────────────────────────────────────────────────────── localize ───┐
 const localized = {
   subheading: (
-    <Trans ns="index" native>
+    <Trans ns="index" i18nKey="my-strength.subheading">
       My Strength
     </Trans>
   ),
   heading: (
-    <Trans ns="index" native>
+    <Trans ns="index" i18nKey="my-strength.heading">
       One world, one <Highlight>mind</Highlight>.
     </Trans>
   ),
   paragraph: (
-    <Trans ns="index" native>
+    <Trans ns="index" i18nKey="my-strength.paragraph">
       Internationalization is hard. But if there is anything so called language
       barrier, now you’ve got the force to break it.
     </Trans>
@@ -87,44 +87,44 @@ const localized = {
   spokenLanguages: [
     {
       name: (
-        <Trans ns="index" native>
+        <Trans ns="index" i18nKey="my-strength.spokenLanguages.1.name">
           English
         </Trans>
       ),
       description: (
-        <Trans ns="index" native>
+        <Trans ns="index" i18nKey="my-strength.spokenLanguages.1.description">
           Used in more than 80+ countries.
         </Trans>
       ),
     },
     {
       name: (
-        <Trans ns="index" native>
+        <Trans ns="index" i18nKey="my-strength.spokenLanguages.2.name">
           Chinese
         </Trans>
       ),
       description: (
-        <Trans ns="index" native>
+        <Trans ns="index" i18nKey="my-strength.spokenLanguages.2.description">
           Spoken by 1.2 billion across the world.
         </Trans>
       ),
     },
     {
       name: (
-        <Trans ns="index" native>
+        <Trans ns="index" i18nKey="my-strength.spokenLanguages.3.name">
           Japanese
         </Trans>
       ),
       description: (
-        <Trans ns="index" native>
+        <Trans ns="index" i18nKey="my-strength.spokenLanguages.3.description">
           The language of 4.97 trillion GDP
         </Trans>
       ),
     },
   ],
   linkButton: (
-    <Trans ns="index" native>
-      And More...
+    <Trans ns="index" i18nKey="my-strength.linkButton">
+      And More
     </Trans>
   ),
 }

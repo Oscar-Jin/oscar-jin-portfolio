@@ -78,17 +78,17 @@ const BookIconForLargeDevice = styled(RiBookLine)`
 //  ────────────────────────────────────────────────────────── localize ───┐
 const localized = {
   heading: (
-    <Trans ns="index" native>
+    <Trans ns="index" i18nKey="what-I-study.heading">
       Leaning into the unknown
     </Trans>
   ),
   subheading: (
-    <Trans ns="index" native>
+    <Trans ns="index" i18nKey="what-I-study.subheading">
       What I Study
     </Trans>
   ),
   description: (
-    <Trans ns="index" native>
+    <Trans ns="index" i18nKey="what-I-study.description">
       Talent is helpful. But knowledge is far more superior. Through
       self-education, reading books give us the power to explore the unknown
       territories.
@@ -99,18 +99,18 @@ const localized = {
       key: "Leadership",
       icon: <BiRun className="w-6 h-6 text-primary-500" />,
       title: (
-        <Trans ns="index" native>
+        <Trans ns="index" i18nKey="what-I-study.categories.1.title">
           Leadership
         </Trans>
       ),
       books: [
-        <Trans ns="index" native key="01">
+        <Trans ns="index" i18nKey="what-I-study.categories.1.books.1" key="01">
           Good To Great
         </Trans>,
-        <Trans ns="index" native key="02">
+        <Trans ns="index" i18nKey="what-I-study.categories.1.books.2" key="02">
           The Seven Habits of Highly Effective People
         </Trans>,
-        <Trans ns="index" native key="03">
+        <Trans ns="index" i18nKey="what-I-study.categories.1.books.3" key="03">
           Extreme Ownership
         </Trans>,
       ],
@@ -119,16 +119,16 @@ const localized = {
       key: "Business & Management",
       icon: <BiBarChartSquare className="w-6 h-6 text-primary-500" />,
       title: (
-        <Trans ns="index" native>
+        <Trans ns="index" i18nKey="what-I-study.categories.2.title">
           Business & Management
         </Trans>
       ),
       books: [
-        <Trans ns="index" native key="01">
+        <Trans ns="index" i18nKey="what-I-study.categories.2.books.1" key="01">
           The Lean Startup
         </Trans>,
 
-        <Trans ns="index" native key="02">
+        <Trans ns="index" i18nKey="what-I-study.categories.2.books.2" key="02">
           The Startup Owner's Manual
         </Trans>,
       ],
@@ -137,18 +137,18 @@ const localized = {
       key: "Philosophy",
       icon: <BiBible className="w-6 h-6 text-primary-500" />,
       title: (
-        <Trans ns="index" native>
+        <Trans ns="index" i18nKey="what-I-study.categories.3.title">
           Philosophy
         </Trans>
       ),
       books: [
-        <Trans ns="index" native key="01">
+        <Trans ns="index" i18nKey="what-I-study.categories.3.books.1" key="01">
           Meditations
         </Trans>,
-        <Trans ns="index" native key="02">
+        <Trans ns="index" i18nKey="what-I-study.categories.3.books.2" key="02">
           Think and Grow Rich
         </Trans>,
-        <Trans ns="index" native key="03">
+        <Trans ns="index" i18nKey="what-I-study.categories.3.books.3" key="03">
           The Obstacle Is the Way
         </Trans>,
       ],
@@ -157,15 +157,15 @@ const localized = {
       key: "Arts & Design",
       icon: <BiLandscape className="w-6 h-6 text-primary-500" />,
       title: (
-        <Trans ns="index" native>
+        <Trans ns="index" i18nKey="what-I-study.categories.4.title">
           Arts & Design
         </Trans>
       ),
       books: [
-        <Trans ns="index" native key="01">
+        <Trans ns="index" i18nKey="what-I-study.categories.4.books.1" key="01">
           Change by Design
         </Trans>,
-        <Trans ns="index" native key="02">
+        <Trans ns="index" i18nKey="what-I-study.categories.4.books.2" key="02">
           The Design of Everyday Things
         </Trans>,
       ],
@@ -174,15 +174,15 @@ const localized = {
       key: "Programming",
       icon: <BiCode className="w-6 h-6 text-primary-500" />,
       title: (
-        <Trans ns="index" native>
+        <Trans ns="index" i18nKey="what-I-study.categories.5.title">
           Programming
         </Trans>
       ),
       books: [
-        <Trans ns="index" native key="01">
+        <Trans ns="index" i18nKey="what-I-study.categories.5.books.1" key="01">
           Computer Science An Overview
         </Trans>,
-        <Trans ns="index" native key="02">
+        <Trans ns="index" i18nKey="what-I-study.categories.5.books.2" key="02">
           Learn Enough To Be Dangerous
         </Trans>,
       ],
@@ -191,25 +191,25 @@ const localized = {
       key: "Neuropsychology",
       icon: <BiBrain className="w-6 h-6 text-primary-500" />,
       title: (
-        <Trans ns="index" native>
+        <Trans ns="index" i18nKey="what-I-study.categories.6.title">
           Neuropsychology
         </Trans>
       ),
       books: [
-        <Trans ns="index" native key="01">
+        <Trans ns="index" i18nKey="what-I-study.categories.6.books.1" key="01">
           The Willpower Instinct
         </Trans>,
-        <Trans ns="index" native key="02">
+        <Trans ns="index" i18nKey="what-I-study.categories.6.books.2" key="02">
           Mindset
         </Trans>,
-        <Trans ns="index" native key="03">
+        <Trans ns="index" i18nKey="what-I-study.categories.6.books.3" key="03">
           The Principle of Neural Science
         </Trans>,
       ],
     },
   ],
   linkButton: (
-    <Trans ns="index" native>
+    <Trans ns="index" i18nKey="what-I-study.linkButton">
       Explore My Library
     </Trans>
   ),
