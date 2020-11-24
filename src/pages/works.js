@@ -1,15 +1,16 @@
 //  ──────────────────────────────────────────────────────────── import ───┐
 import React from "react"
 import Img from "gatsby-image"
-import tw, { styled } from "twin.macro"
-import { SectionDescription } from "../components/designer-uis/heading"
-import Layout from "../components/page-structures/layout"
-import { Trans } from "gatsby-plugin-react-i18next"
-import { useStaticQuery, graphql } from "gatsby"
-import { FaGithub } from "react-icons/fa"
 import { BiLink } from "react-icons/bi"
+import tw, { styled } from "twin.macro"
+import { FaGithub } from "react-icons/fa"
 import { projects } from "../data/works.json"
-
+import { useStaticQuery, graphql } from "gatsby"
+import { Trans } from "gatsby-plugin-react-i18next"
+import Layout from "../components/page-structures/layout"
+import { SectionDescription } from "../components/designer-uis/heading"
+import { useTranslation, useI18next } from "gatsby-plugin-react-i18next"
+import SEO from "../components/advanced-optimizations/seo"
 // <───────────────────────────────────────────────────────────────────────┘
 
 //  ──────────────────────────────────────────────────────────── styled ───┐
@@ -101,6 +102,8 @@ const localized = {
 
 //  ───────────────────────────────────────────────────────── component ───┐
 export default function MyWorks() {
+  const { t } = useTranslation()
+  const { language } = useI18next()
   const data = useStaticQuery(graphql`
     query {
       portfolio: file(relativePath: { eq: "portfolio.png" }) {
@@ -185,6 +188,7 @@ export default function MyWorks() {
 
   return (
     <Layout>
+      <SEO title={t("nav:Works")} lang={language} />
       <Container>
         <ContentWithPaddingXl>
           <HeadingContainer>

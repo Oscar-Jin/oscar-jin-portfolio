@@ -2,13 +2,15 @@
 import React from "react"
 import Img from "gatsby-image"
 import tw, { styled } from "twin.macro"
-import { SectionDescription } from "../components/designer-uis/heading"
-import Layout from "../components/page-structures/layout"
-import { Trans } from "gatsby-plugin-react-i18next"
-import { useStaticQuery, graphql } from "gatsby"
-import { FaGithub } from "react-icons/fa"
 import { BiLink } from "react-icons/bi"
+import { FaGithub } from "react-icons/fa"
 import { gallery } from "../data/designs.json"
+import { useStaticQuery, graphql } from "gatsby"
+import { Trans } from "gatsby-plugin-react-i18next"
+import Layout from "../components/page-structures/layout"
+import SEO from "../components/advanced-optimizations/seo"
+import { SectionDescription } from "../components/designer-uis/heading"
+import { useTranslation, useI18next } from "gatsby-plugin-react-i18next"
 
 // <───────────────────────────────────────────────────────────────────────┘
 
@@ -101,6 +103,8 @@ const localized = {
 
 //  ───────────────────────────────────────────────────────── component ───┐
 export default function Designs() {
+  const { t } = useTranslation()
+  const { language } = useI18next()
   const data = useStaticQuery(graphql`
     query {
       businessModel: file(relativePath: { eq: "Business Model.png" }) {
@@ -282,6 +286,7 @@ export default function Designs() {
 
   return (
     <Layout>
+      <SEO title={t("nav:Designs")} lang={language} />
       <Container>
         <ContentWithPaddingXl>
           <HeadingContainer>

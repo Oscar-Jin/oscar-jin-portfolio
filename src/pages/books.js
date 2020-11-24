@@ -5,6 +5,9 @@ import { graphql, Link } from "gatsby"
 import tw, { styled } from "twin.macro"
 import { Trans } from "gatsby-plugin-react-i18next"
 import Layout from "../components/page-structures/layout"
+import SEO from "../components/advanced-optimizations/seo"
+import { useTranslation, useI18next } from "gatsby-plugin-react-i18next"
+
 // <───────────────────────────────────────────────────────────────────────┘
 
 //  ────────────────────────────────────────────────────────── tailwind ───┐
@@ -75,8 +78,12 @@ Books.propTypes = {
 }
 
 export default function Books(props) {
+  const { t } = useTranslation()
+  const { language } = useI18next()
+
   return (
     <Layout>
+      <SEO title={t("nav:Books")} lang={language} />
       <Content>
         <HeadingInfoContainer>
           <Subheading>{localized.subheading}</Subheading>

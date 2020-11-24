@@ -3,7 +3,9 @@ import React from "react"
 import tw, { styled } from "twin.macro"
 import { Trans } from "gatsby-plugin-react-i18next"
 import Layout from "../components/page-structures/layout"
+import SEO from "../components/advanced-optimizations/seo"
 import GetStarted from "../components/section-layouts/get-started"
+import { useTranslation, useI18next } from "gatsby-plugin-react-i18next"
 // <───────────────────────────────────────────────────────────────────────┘
 
 //  ────────────────────────────────────────────────────────── tailwind ───┐
@@ -237,8 +239,12 @@ const localized = {
 
 //  ───────────────────────────────────────────────────────── component ───┐
 export default function WhyOscar() {
+  const { t } = useTranslation()
+  const { language } = useI18next()
+
   return (
     <Layout>
+      <SEO title={t("nav:Why Oscar")} lang={language} />
       <SingleColumn>
         <HeadingInfoContainer>
           <HeadingTitle>{localized.headingTitle}</HeadingTitle>

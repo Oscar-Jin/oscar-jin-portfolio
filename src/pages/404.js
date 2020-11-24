@@ -1,8 +1,9 @@
 //  ──────────────────────────────────────────────────────────── import ───┐
 import React from "react"
 import tw, { styled } from "twin.macro"
-import SEO from "../components/advanced-optimizations/seo"
 import Layout from "../components/page-structures/layout"
+import SEO from "../components/advanced-optimizations/seo"
+import { Trans, useI18next } from "gatsby-plugin-react-i18next"
 
 // <───────────────────────────────────────────────────────────────────────┘
 
@@ -26,25 +27,44 @@ const Subtitle = styled.h3`
 const Description = styled.p`
   ${tw`mt-3 text-gray-500`}
 `
-
 // <───────────────────────────────────────────────────────────────────────┘
 
-const NotFoundPage = () => (
-  <Layout>
-    <SEO title="404: Not found" />
-    <StretchToFill>
-      <PageNotFound>
-        <Section>
-          <Title>404</Title>
-          <Subtitle>page not found</Subtitle>
-          <Description>
-            The page you are looking for was moved, removed, renamed or might
-            never existed.
-          </Description>
-        </Section>
-      </PageNotFound>
-    </StretchToFill>
-  </Layout>
-)
+//  ────────────────────────────────────────────────────────── localize ───┐
+const localized = {
+  title: "404",
+  subtitle: (
+    <Trans ns="notFound404" i18nKey="subtitle">
+      page not found
+    </Trans>
+  ),
+  description: (
+    <Trans ns="notFound404" i18nKey="description">
+      The page you are looking for was moved, removed, renamed or might never
+      existed.
+    </Trans>
+  ),
+}
+// <───────────────────────────────────────────────────────────────────────┘
+
+//  ───────────────────────────────────────────────────────── component ───┐
+const NotFoundPage = () => {
+  const { language } = useI18next()
+
+  return (
+    <Layout>
+      <SEO title={localized.title} lang={language} />
+      <StretchToFill>
+        <PageNotFound>
+          <Section>
+            <Title>{localized.title}</Title>
+            <Subtitle>{localized.subtitle}</Subtitle>
+            <Description>{localized.description}</Description>
+          </Section>
+        </PageNotFound>
+      </StretchToFill>
+    </Layout>
+  )
+}
+// <───────────────────────────────────────────────────────────────────────┘
 
 export default NotFoundPage

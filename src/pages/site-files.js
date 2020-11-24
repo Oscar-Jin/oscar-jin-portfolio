@@ -3,8 +3,10 @@ import React from "react"
 import { graphql } from "gatsby"
 import PropTypes from "prop-types"
 import tw, { styled } from "twin.macro"
-import Layout from "../components/page-structures/layout"
 import { Trans } from "gatsby-plugin-react-i18next"
+import Layout from "../components/page-structures/layout"
+import SEO from "../components/advanced-optimizations/seo"
+import { useTranslation, useI18next } from "gatsby-plugin-react-i18next"
 
 // <───────────────────────────────────────────────────────────────────────┘
 
@@ -32,12 +34,16 @@ SiteFiles.propTypes = {
 }
 
 export default function SiteFiles(props) {
+  const { t } = useTranslation()
+  const { language } = useI18next()
+
   return (
     <Layout>
+      <SEO title={t("nav:Site Files")} lang={language} />
       <Container>
         <ContentWithPaddingXl>
           <Heading>
-            <Trans ns="site-files" i18nKey="title">
+            <Trans ns="siteFiles" i18nKey="title">
               My Site&apos;s Files
             </Trans>
           </Heading>
