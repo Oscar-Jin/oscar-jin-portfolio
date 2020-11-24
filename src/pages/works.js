@@ -20,22 +20,22 @@ const ContentWithPaddingXl = styled.div`
   ${tw`max-w-screen-xl py-20 mx-auto lg:py-24`}
 `
 const HeadingContainer = styled.div`
-  ${tw`text-center`}
+  ${tw`text-center `}
 `
 const Subheading = styled.h3`
-  ${tw`mb-4 font-bold text-primary-500`}
+  ${tw`mb-4 font-bold text-primary-500 `}
 `
 const Heading = styled.h2`
   ${tw`text-4xl font-black tracking-wide text-center sm:text-5xl`}
 `
 const Description = styled(SectionDescription)`
-  ${tw`mx-auto`}
+  ${tw`mx-auto `}
 `
 const Cards = styled.div`
   ${tw`relative flex flex-wrap mt-12 -mr-3 `}
 `
 const Card = styled.div`
-  ${tw`flex flex-col h-full overflow-hidden bg-gray-200 rounded-md shadow-sm`}
+  ${tw`flex flex-col h-full overflow-hidden transition duration-150 bg-gray-100 rounded-md shadow-sm hover:shadow`}
 `
 const ImageContainer = styled.div`
   ${tw`flex-1 overflow-hidden`}
@@ -51,34 +51,34 @@ const CardText = styled.div`
   ${tw`flex-1 px-6 py-8`}
 `
 const CardTitle = styled.h6`
-  ${tw`text-lg font-bold `}
+  ${tw`text-lg font-bold`}
 `
 const LinksContainer = styled.div`
   ${tw`flex my-6 mr-2`}
 `
-const SiteLink = styled.div`
-  ${tw`p-2 m-2 transition duration-300 bg-white rounded-full shadow hover:bg-primary-100`}
-`
-const GithubLink = styled.div`
-  ${tw`p-2 m-2 ml-1 transition duration-300 bg-white rounded-full shadow hover:bg-primary-100`}
-`
 const ProjectInfo = styled.div`
-  ${tw`flex`}
+  ${tw`flex `}
 `
 const ProjectDescription = styled.div`
-  ${tw`text-xs text-gray-600`}
+  ${tw`text-xs text-gray-600 `}
 `
 const Category = styled.div`
   ${tw`mt-2 font-semibold`}
 `
 const CardContainer = styled.div`
-  ${tw`relative z-20 w-full max-w-sm pr-3 mx-auto mt-10 sm:pt-3 sm:w-1/2 lg:w-1/3 sm:max-w-none sm:mx-0`}
+  ${tw`relative z-20 w-full max-w-sm pr-3 mx-auto mt-10 sm:pt-3 sm:w-1/2 lg:w-1/3 sm:max-w-none sm:mx-0 `}
+`
+const SiteLink = styled.div`
+  ${tw`p-2 m-2 transition duration-300 bg-white rounded-full shadow bg-primary-500 hover:bg-primary-900`}
+`
+const GithubLink = styled.div`
+  ${tw`p-2 m-2 ml-1 transition duration-300 bg-white rounded-full shadow bg-primary-500 hover:bg-primary-900`}
 `
 const GitHubIcon = styled(FaGithub)`
-  ${tw`w-6 h-6`}
+  ${tw`w-6 h-6 text-white`}
 `
 const LinkIcon = styled(BiLink)`
-  ${tw`w-6 h-6`}
+  ${tw`w-6 h-6 text-white`}
 `
 // <───────────────────────────────────────────────────────────────────────┘
 
