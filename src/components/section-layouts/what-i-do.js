@@ -61,10 +61,10 @@ const SkillDescription = styled.div`
   ${tw`mt-4 leading-relaxed text-center text-gray-600 md:text-left`}
 `
 const LinkButtonTeal = styled(Link)`
-  ${tw`w-40 py-4 my-2 mt-8 font-bold leading-none text-center text-gray-100 transition duration-300 bg-teal-500 rounded-full focus:outline-none hover:bg-primary-900`}
+  ${tw`w-48 py-4 my-2 mt-8 font-bold leading-none text-center text-gray-100 transition duration-300 bg-teal-500 rounded-full focus:outline-none hover:bg-primary-900`}
 `
 const LinkButtonRed = styled(Link)`
-  ${tw`w-40 py-4 my-2 mt-8 font-bold leading-none text-center text-gray-100 transition duration-300 bg-red-500 rounded-full focus:outline-none hover:bg-primary-900`}
+  ${tw`w-48 py-4 my-2 mt-8 font-bold leading-none text-center text-gray-100 transition duration-300 bg-red-500 rounded-full focus:outline-none hover:bg-primary-900`}
 `
 // <───────────────────────────────────────────────────────────────────────┘
 
@@ -122,7 +122,7 @@ const localized = {
         </Trans>
       ),
       button: (
-        <LinkButtonRed to="/">
+        <LinkButtonRed to="/designs">
           <Trans ns="index" i18nKey="what-i-do.skills.2.button">
             My Designs
           </Trans>

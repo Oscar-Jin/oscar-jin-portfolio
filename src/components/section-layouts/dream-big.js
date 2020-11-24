@@ -93,7 +93,7 @@ export default function DreamBig() {
         <LeftColumn>
           <Heading>{localized.heading}</Heading>
           <Paragraph>{localized.paragraph}</Paragraph>
-          <LinkButton to="/why-oscar">{localized.linkButton}</LinkButton>
+          <LinkButton to="/why">{localized.linkButton}</LinkButton>
           <LogoStrip>
             <StripTitle>{localized.stripTitle}</StripTitle>
             <StripImage fluid={data?.file?.childImageSharp?.fluid} />

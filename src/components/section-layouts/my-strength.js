@@ -153,7 +153,7 @@ export default function MyStrength() {
                 </List>
               ))}
             </Lists>
-            <LinkButton to="/">{localized.linkButton}</LinkButton>
+            <LinkButton to="/why#4">{localized.linkButton}</LinkButton>
           </TextContent>
         </TextColumn>
         <ImageColumn>

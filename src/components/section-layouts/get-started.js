@@ -72,8 +72,10 @@ export default function GetStarted() {
               <Text>{localized.content}</Text>
             </TextContainer>
             <LinksContainer>
-              <PrimaryLink to="/">{localized.primaryLink}</PrimaryLink>
-              <SecondaryLink to="/">{localized.secondaryLink}</SecondaryLink>
+              <PrimaryLink to="/resume">{localized.primaryLink}</PrimaryLink>
+              <SecondaryLink to="/connect">
+                {localized.secondaryLink}
+              </SecondaryLink>
             </LinksContainer>
           </Row>
         </PrimaryBackgroundContainer>
