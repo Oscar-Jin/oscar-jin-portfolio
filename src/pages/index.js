@@ -1,3 +1,4 @@
+//  ──────────────────────────────────────────────────────────── import ───┐
 import React from "react"
 import DreamBig from "../components/section-layouts/dream-big"
 import Layout from "../components/page-structures/layout"
@@ -9,6 +10,9 @@ import Introduce from "../components/section-layouts/introduce"
 import GetStarted from "../components/section-layouts/get-started"
 import SEO from "../components/advanced-optimizations/seo"
 
+// <───────────────────────────────────────────────────────────────────────┘
+
+//  ───────────────────────────────────────────────────────── component ───┐
 const HomePage = () => {
   return (
     <Layout animate>
@@ -23,5 +27,6 @@ const HomePage = () => {
     </Layout>
   )
 }
+// <───────────────────────────────────────────────────────────────────────┘
 
 export default HomePage
