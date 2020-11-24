@@ -59,19 +59,19 @@ function Header() {
 
   const links = [
     <NavLinks key={1}>
-      <NavLink to="/">
+      <NavLink to="/books">
         <Trans ns="nav">Books</Trans>
       </NavLink>
       <NavLink to="/works">
         <Trans ns="nav">Works</Trans>
       </NavLink>
-      <NavLink to="/">
+      <NavLink to="/designs">
         <Trans ns="nav">Designs</Trans>
       </NavLink>
-      <NavLink to="/">
+      <NavLink to="/connect">
         <Trans ns="nav">Connect</Trans>
       </NavLink>
-      <PrimaryLink to="/">
+      <PrimaryLink to="/resume">
         <Trans ns="nav">Resume</Trans>
       </PrimaryLink>
     </NavLinks>,

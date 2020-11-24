@@ -33,6 +33,9 @@ const LinkListItem = styled.li`
 const NavLink = styled(Link)`
   ${tw`pb-1 transition duration-300 border-b-2 border-transparent hocus:border-gray-100`}
 `
+const ExternalLink = styled.a`
+  ${tw`pb-1 transition duration-300 border-b-2 border-transparent hocus:border-gray-100`}
+`
 const Divider = styled.div`
   ${tw`w-full my-16 border-b-2 border-primary-400`}
 `
@@ -71,7 +74,7 @@ export default function Footer() {
             <ColumnHeading>Main</ColumnHeading>
             <LinkList>
               <LinkListItem>
-                <NavLink to="/">
+                <NavLink to="/books">
                   <Trans ns="nav">Books</Trans>
                 </NavLink>
               </LinkListItem>
@@ -81,20 +84,60 @@ export default function Footer() {
                 </NavLink>
               </LinkListItem>
               <LinkListItem>
-                <NavLink to="/">
+                <NavLink to="/designs">
                   <Trans ns="nav">Designs</Trans>
                 </NavLink>
               </LinkListItem>
               <LinkListItem>
-                <NavLink to="/">
+                <NavLink to="/connect">
                   <Trans ns="nav">Connect</Trans>
                 </NavLink>
               </LinkListItem>
             </LinkList>
           </Column>
-          <Column></Column>
-          <Column></Column>
-          <Column></Column>
+          <Column>
+            <ColumnHeading>Feature</ColumnHeading>
+            <LinkList>
+              <LinkListItem>
+                <NavLink to="/why">
+                  <Trans ns="nav">Why Oscar</Trans>
+                </NavLink>
+              </LinkListItem>
+            </LinkList>
+          </Column>
+          <Column>
+            <ColumnHeading>External</ColumnHeading>
+            <LinkList>
+              <LinkListItem>
+                <ExternalLink href="https://lacoms-hub.herokuapp.com">
+                  LACOMS-HUB
+                </ExternalLink>
+              </LinkListItem>
+              <LinkListItem>
+                <ExternalLink href="https://preview-student-center.surge.sh">
+                  Student Center
+                </ExternalLink>
+              </LinkListItem>
+              <LinkListItem>
+                <ExternalLink href="https://preview-pole-star.surge.sh">
+                  Pole Star
+                </ExternalLink>
+              </LinkListItem>
+              <LinkListItem>
+                <ExternalLink href="https://preview-polar-express.surge.sh">
+                  Polar Express
+                </ExternalLink>
+              </LinkListItem>
+            </LinkList>
+          </Column>
+          <Column>
+            <ColumnHeading>Test</ColumnHeading>
+            <LinkList>
+              <LinkListItem>
+                <NavLink to="/site-files">Site Files</NavLink>
+              </LinkListItem>
+            </LinkList>
+          </Column>
           <Column></Column>
         </FiveColumns>
         <Divider />
@@ -107,10 +150,10 @@ export default function Footer() {
             &copy; 2020 Oscar Jin. All Rights Reserved.
           </CopyrightNotice>
           <SocialLinksContainer>
-            <SocialLink href="">
+            <SocialLink href="https://github.com">
               <AiFillGithub />
             </SocialLink>
-            <SocialLink href="">
+            <SocialLink href="mailto:kintininn@gmail.com?subject=Hello Oscar! 金ちゃん！">
               <AiOutlineMail />
             </SocialLink>
             <SocialLink href="">
@@ -119,13 +162,6 @@ export default function Footer() {
           </SocialLinksContainer>
         </ThreeColRow>
       </Content>
-      <div className="text-sm opacity-25 ">
-        {"Icons made by "}
-        <a href="https://www.flaticon.com/authors/freepik" title="Freepik">
-          Freepik
-        </a>
-        {" from "}
-      </div>
     </Container>
   )
 }
