@@ -134,7 +134,9 @@ export default function Footer() {
             <ColumnHeading>Test</ColumnHeading>
             <LinkList>
               <LinkListItem>
-                <NavLink to="/site-files">Site Files</NavLink>
+                <NavLink to="/site-files">
+                  <Trans ns="nav">Site Files</Trans>
+                </NavLink>
               </LinkListItem>
             </LinkList>
           </Column>
