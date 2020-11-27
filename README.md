@@ -1,99 +1,43 @@
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 <p align="center">
   <a href="https://www.gatsbyjs.com">
-    <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
+    <img alt="Gatsby" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iMjMycHgiIGhlaWdodD0iMjMycHgiIHZpZXdCb3g9IjAgMCAyMzIgMjMyIiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPgogICAgPHRpdGxlPmxvZ288L3RpdGxlPgogICAgPGcgaWQ9IlBhZ2UtMSIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPGcgaWQ9ImxvZ28iIGZpbGwtcnVsZT0ibm9uemVybyI+CiAgICAgICAgICAgIDxyZWN0IGlkPSJSZWN0YW5nbGUiIGZpbGw9IiM1QjFCRjUiIHg9IjAiIHk9IjAiIHdpZHRoPSIyMzIiIGhlaWdodD0iMjMyIiByeD0iMjIiPjwvcmVjdD4KICAgICAgICAgICAgPHBhdGggZD0iTTg4LjUxMjg1OSwxODIuNzg5NzczIEMxMDAuMDYxMTU0LDE4Mi43ODk3NzMgMTEwLjQ2OTUzNSwxODAuMTU4MzgxIDExOS43MzgwMDEsMTc0Ljg5NTU5NyBDMTI5LjAwNjQ2NywxNjkuNjMyODEyIDEzNi4zMzYwMTIsMTYxLjk5NDMxOCAxNDEuNzI2NjM3LDE1MS45ODAxMTQgQzE0Ny4xMTcyNjIsMTQxLjk2NTkwOSAxNDkuODEyNTc1LDEyOS44MjEwMjMgMTQ5LjgxMjU3NSwxMTUuNTQ1NDU1IEMxNDkuODEyNTc1LDEwMS4yNjk4ODYgMTQ3LjExNzI2Miw4OS4xMjUgMTQxLjcyNjYzNyw3OS4xMTA3OTU1IEMxMzYuMzM2MDEyLDY5LjA5NjU5MDkgMTI5LjAwNjQ2Nyw2MS40NTgwOTY2IDExOS43MzgwMDEsNTYuMTk1MzEyNSBDMTEwLjQ2OTUzNSw1MC45MzI1Mjg0IDEwMC4wNjExNTQsNDguMzAxMTM2NCA4OC41MTI4NTksNDguMzAxMTM2NCBDNzYuODc5MzM2Myw0OC4zMDExMzY0IDY2LjQzODk5NTQsNTAuOTMyNTI4NCA1Ny4xOTE4MzYzLDU2LjE5NTMxMjUgQzQ3Ljk0NDY3NzIsNjEuNDU4MDk2NiA0MC42MzY0Mzg1LDY5LjA5NjU5MDkgMzUuMjY3MTIwNCw3OS4xMTA3OTU1IEMyOS44OTc4MDIyLDg5LjEyNSAyNy4yMTMxNDMxLDEwMS4yNjk4ODYgMjcuMjEzMTQzMSwxMTUuNTQ1NDU1IEMyNy4yMTMxNDMxLDEyOS43Nzg0MDkgMjkuODk3ODAyMiwxNDEuOTAxOTg5IDM1LjI2NzEyMDQsMTUxLjkxNjE5MyBDNDAuNjM2NDM4NSwxNjEuOTMwMzk4IDQ3Ljk0NDY3NzIsMTY5LjU3OTU0NSA1Ny4xOTE4MzYzLDE3NC44NjM2MzYgQzY2LjQzODk5NTQsMTgwLjE0NzcyNyA3Ni44NzkzMzYzLDE4Mi43ODk3NzMgODguNTEyODU5LDE4Mi43ODk3NzMgWiBNODguNTEyODU5LDE1OC4zMDgyMzkgQzgxLjgyMjUxODEsMTU4LjMwODIzOSA3NS45ODQ0NDk5LDE1Ni42Njc2MTQgNzAuOTk4NjU0NSwxNTMuMzg2MzY0IEM2Ni4wMTI4NTksMTUwLjEwNTExNCA2Mi4xNDU2NzE1LDE0NS4yODk3NzMgNTkuMzk3MDkyLDEzOC45NDAzNDEgQzU2LjY0ODUxMjQsMTMyLjU5MDkwOSA1NS4yNzQyMjI2LDEyNC43OTI2MTQgNTUuMjc0MjIyNiwxMTUuNTQ1NDU1IEM1NS4yNzQyMjI2LDEwNi4yOTgyOTUgNTYuNjQ4NTEyNCw5OC41IDU5LjM5NzA5Miw5Mi4xNTA1NjgyIEM2Mi4xNDU2NzE1LDg1LjgwMTEzNjQgNjYuMDEyODU5LDgwLjk4NTc5NTUgNzAuOTk4NjU0NSw3Ny43MDQ1NDU1IEM3NS45ODQ0NDk5LDc0LjQyMzI5NTUgODEuODIyNTE4MSw3Mi43ODI2NzA1IDg4LjUxMjg1OSw3Mi43ODI2NzA1IEM5NS4yMDMxOTk5LDcyLjc4MjY3MDUgMTAxLjA0MTI2OCw3NC40MjMyOTU1IDEwNi4wMjcwNjQsNzcuNzA0NTQ1NSBDMTExLjAxMjg1OSw4MC45ODU3OTU1IDExNC44ODAwNDYsODUuODAxMTM2NCAxMTcuNjI4NjI2LDkyLjE1MDU2ODIgQzEyMC4zNzcyMDYsOTguNSAxMjEuNzUxNDk1LDEwNi4yOTgyOTUgMTIxLjc1MTQ5NSwxMTUuNTQ1NDU1IEMxMjEuNzUxNDk1LDEyNC43OTI2MTQgMTIwLjM3NzIwNiwxMzIuNTkwOTA5IDExNy42Mjg2MjYsMTM4Ljk0MDM0MSBDMTE0Ljg4MDA0NiwxNDUuMjg5NzczIDExMS4wMTI4NTksMTUwLjEwNTExNCAxMDYuMDI3MDY0LDE1My4zODYzNjQgQzEwMS4wNDEyNjgsMTU2LjY2NzYxNCA5NS4yMDMxOTk5LDE1OC4zMDgyMzkgODguNTEyODU5LDE1OC4zMDgyMzkgWiIgaWQ9Ik8iIGZpbGw9IiNGRkZGRkYiPjwvcGF0aD4KICAgICAgICAgICAgPHBhdGggZD0iTTE1Ny4xODA0OTgsMTgyLjc4OTc3MyBDMTY2LjA0NDEzNCwxODIuNzg5NzczIDE3My44MjExMjMsMTgxLjEwNjUzNCAxODAuNTExNDY0LDE3Ny43NDAwNTcgQzE4Ny4yMDE4MDQsMTc0LjM3MzU4IDE5Mi40MzI2MjgsMTY5LjU3OTU0NSAxOTYuMjAzOTM1LDE2My4zNTc5NTUgQzE5OS45NzUyNDIsMTU3LjEzNjM2NCAyMDEuODYwODk1LDE0OS44MDY4MTggMjAxLjg2MDg5NSwxNDEuMzY5MzE4IEwyMDEuODYwODk1LDE0MS4zNjkzMTggTDIwMS44NjA4OTUsNTAuMDkwOTA5MSBMMTc0LjUwMjk0MSw1MC4wOTA5MDkxIEwxNzQuNTAyOTQxLDE0MS4zNjkzMTggQzE3NC41MDI5NDEsMTQ1LjU0NTQ1NSAxNzMuODg1MDQzLDE0OS4wNjEwOCAxNzIuNjQ5MjQ4LDE1MS45MTYxOTMgQzE3MS40MTM0NTIsMTU0Ljc3MTMwNyAxNjkuNjEzMDI2LDE1Ni45MzM5NDkgMTY3LjI0Nzk2OSwxNTguNDA0MTE5IEMxNjQuODgyOTEyLDE1OS44NzQyOSAxNjEuOTk1ODM5LDE2MC42MDkzNzUgMTU4LjU4Njc0OCwxNjAuNjA5Mzc1IEMxNTUuMzQ4MTExLDE2MC42MDkzNzUgMTUyLjU0NjI2NSwxNTkuOTU5NTE3IDE1MC4xODEyMDgsMTU4LjY1OTgwMSBDMTQ3LjgxNjE1MSwxNTcuMzYwMDg1IDE0NS45NjI0NTgsMTU1LjQ4NTA4NSAxNDQuNjIwMTI4LDE1My4wMzQ4MDEgQzE0My4yNzc3OTksMTUwLjU4NDUxNyAxNDIuNTY0MDIsMTQ3LjYzMzUyMyAxNDIuNDc4NzkzLDE0NC4xODE4MTggTDE0Mi40Nzg3OTMsMTQ0LjE4MTgxOCBMMTE0LjkyODM1OSwxNDQuMTgxODE4IEMxMTQuODg2NDY0LDE1Mi44NzUgMTE2Ljc0MDE1NywxNjAuMDg3MzU4IDEyMC40OTAxNTcsMTY1LjgxODg5MiBDMTI0LjI0MDE1NywxNzEuNTUwNDI2IDEyOS4zMjE4MzMsMTc1LjgxMTc5IDEzNS43MzUxODUsMTc4LjYwMjk4MyBDMTQyLjE0ODUzNywxODEuMzk0MTc2IDE0OS4yOTY5NzUsMTgyLjc4OTc3MyAxNTcuMTgwNDk4LDE4Mi43ODk3NzMgWiIgaWQ9IkoiIGZpbGw9IiNGMEVFRjMiPjwvcGF0aD4KICAgICAgICA8L2c+CiAgICA8L2c+Cjwvc3ZnPg==" width="60" />
   </a>
 </p>
 <h1 align="center">
-  Gatsby's default starter
+  Oscar Jin Portfolio Website
 </h1>
 
-Kick off your project with this default boilerplate. This starter ships with the main Gatsby configuration files you might need to get up and running blazing fast with the blazing fast app generator for React.
+## Description
 
-_Have another more specific idea? You may want to check out our vibrant collection of [official and community-created starters](https://www.gatsbyjs.com/docs/gatsby-starters/)._
+This website is powered by Gatsby. It showcases my work and some other cool stuff. You can also view the website from here: 
 
-## 🚀 Quick start
+[http://oscar-jin.surge.sh](http://oscar-jin.surge.sh)
 
-1.  **Create a Gatsby site.**
+## Badges
 
-    Use the Gatsby CLI to create a new site, specifying the default starter.
+<img src="https://img.shields.io/github/license/mashape/apistatus.svg" />
 
-    ```shell
-    # create a new Gatsby site using the default starter
-    gatsby new my-default-starter https://github.com/gatsbyjs/gatsby-starter-default
-    ```
+## Visuals
 
-1.  **Start developing.**
+<img src="https://oscar-jin.surge.sh/static/e372029887c6ad1e183cad86fd9f165a/5707d/portfolio.png" />
 
-    Navigate into your new site’s directory and start it up.
+## Getting Started
 
-    ```shell
-    cd my-default-starter/
-    gatsby develop
-    ```
+```bash
+gatsby develop
+```
 
-1.  **Open the source code and start editing!**
+## Built With
 
-    Your site is now running at `http://localhost:8000`!
+- Gatsby
+- i18next
+- Tailwind CSS
 
-    _Note: You'll also see a second link: _`http://localhost:8000/___graphql`_. This is a tool you can use to experiment with querying your data. Learn more about using this tool in the [Gatsby tutorial](https://www.gatsbyjs.com/tutorial/part-five/#introducing-graphiql)._
+## Author
 
-    Open the `my-default-starter` directory in your code editor of choice and edit `src/pages/index.js`. Save your changes and the browser will update in real time!
+Oscar Jin (Kinchan)
 
-## 🧐 What's inside?
+## Licence
 
-A quick look at the top-level files and directories you'll see in a Gatsby project.
-
-    .
-    ├── node_modules
-    ├── src
-    ├── .gitignore
-    ├── .prettierrc
-    ├── gatsby-browser.js
-    ├── gatsby-config.js
-    ├── gatsby-node.js
-    ├── gatsby-ssr.js
-    ├── LICENSE
-    ├── package-lock.json
-    ├── package.json
-    └── README.md
-
-1.  **`/node_modules`**: This directory contains all of the modules of code that your project depends on (npm packages) are automatically installed.
-
-2.  **`/src`**: This directory will contain all of the code related to what you will see on the front-end of your site (what you see in the browser) such as your site header or a page template. `src` is a convention for “source code”.
-
-3.  **`.gitignore`**: This file tells git which files it should not track / not maintain a version history for.
-
-4.  **`.prettierrc`**: This is a configuration file for [Prettier](https://prettier.io/). Prettier is a tool to help keep the formatting of your code consistent.
-
-5.  **`gatsby-browser.js`**: This file is where Gatsby expects to find any usage of the [Gatsby browser APIs](https://www.gatsbyjs.com/docs/browser-apis/) (if any). These allow customization/extension of default Gatsby settings affecting the browser.
-
-6.  **`gatsby-config.js`**: This is the main configuration file for a Gatsby site. This is where you can specify information about your site (metadata) like the site title and description, which Gatsby plugins you’d like to include, etc. (Check out the [config docs](https://www.gatsbyjs.com/docs/gatsby-config/) for more detail).
-
-7.  **`gatsby-node.js`**: This file is where Gatsby expects to find any usage of the [Gatsby Node APIs](https://www.gatsbyjs.com/docs/node-apis/) (if any). These allow customization/extension of default Gatsby settings affecting pieces of the site build process.
-
-8.  **`gatsby-ssr.js`**: This file is where Gatsby expects to find any usage of the [Gatsby server-side rendering APIs](https://www.gatsbyjs.com/docs/ssr-apis/) (if any). These allow customization of default Gatsby settings affecting server-side rendering.
-
-9.  **`LICENSE`**: This Gatsby starter is licensed under the 0BSD license. This means that you can see this file as a placeholder and replace it with your own license.
-
-10. **`package-lock.json`** (See `package.json` below, first). This is an automatically generated file based on the exact versions of your npm dependencies that were installed for your project. **(You won’t change this file directly).**
-
-11. **`package.json`**: A manifest file for Node.js projects, which includes things like metadata (the project’s name, author, etc). This manifest is how npm knows which packages to install for your project.
-
-12. **`README.md`**: A text file containing useful reference information about your project.
-
-## 🎓 Learning Gatsby
-
-Looking for more guidance? Full documentation for Gatsby lives [on the website](https://www.gatsbyjs.com/). Here are some places to start:
-
-- **For most developers, we recommend starting with our [in-depth tutorial for creating a site with Gatsby](https://www.gatsbyjs.com/tutorial/).** It starts with zero assumptions about your level of ability and walks through every step of the process.
-
-- **To dive straight into code samples, head [to our documentation](https://www.gatsbyjs.com/docs/).** In particular, check out the _Guides_, _API Reference_, and _Advanced Tutorials_ sections in the sidebar.
-
-## 💫 Deploy
-
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-default)
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/import/project?template=https://github.com/gatsbyjs/gatsby-starter-default)
-
-<!-- AUTO-GENERATED-CONTENT:END -->
+MIT 
