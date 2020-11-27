@@ -3,7 +3,7 @@
   "private": true,
   "description": "My portfolio website, powered by Gatsby.",
   "version": "0.1.0",
-  "author": "Oscar Jin (@Kinchan)",
+  "author": "Oscar Jin (Kinchan)",
   "dependencies": {
     "@emotion/react": "^11.0.0",
     "@emotion/styled": "^11.0.0",

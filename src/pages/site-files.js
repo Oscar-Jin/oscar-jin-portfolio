@@ -81,7 +81,7 @@ export default function SiteFiles(props) {
 //  ───────────────────────────────────────────────────────────── query ───┐
 export const query = graphql`
   query {
-    allFile {
+    allFile(sort: { fields: extension }) {
       edges {
         node {
           name
