@@ -246,7 +246,7 @@ export default function WhatIStudy() {
         <Description>{localized.description}</Description>
         <VerticalSpacer />
         {cards}
-        <LinkButton to="/">{localized.linkButton}</LinkButton>
+        <LinkButton to="/books">{localized.linkButton}</LinkButton>
       </ThreeColumnContainer>
     </Container>
   )

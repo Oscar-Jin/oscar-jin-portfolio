@@ -103,6 +103,11 @@ export default function Footer() {
                   <Trans ns="nav">Why Oscar</Trans>
                 </NavLink>
               </LinkListItem>
+              <LinkListItem>
+                <NavLink to="/resume">
+                  <Trans ns="nav">Resume</Trans>
+                </NavLink>
+              </LinkListItem>
             </LinkList>
           </Column>
           <Column>
@@ -158,7 +163,7 @@ export default function Footer() {
             <SocialLink href="mailto:kintininn@gmail.com?subject=Hello Oscar! 金ちゃん！">
               <AiOutlineMail />
             </SocialLink>
-            <SocialLink href="">
+            <SocialLink href="https://www.dropbox.com/s/brs5yz3sw4qdw7s/IMG_0159.JPG?dl=0">
               <SiLine />
             </SocialLink>
           </SocialLinksContainer>

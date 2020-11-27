@@ -116,7 +116,7 @@ const localized = {
   ),
   authorSignature: (
     <Trans ns="index" i18nKey="introduce.authorSignature">
-      Oscar Jin (@Kinchan)
+      Oscar Jin (Kinchan)
     </Trans>
   ),
   facts: [

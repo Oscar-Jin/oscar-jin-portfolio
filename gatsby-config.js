@@ -1,9 +1,9 @@
 module.exports = {
   siteMetadata: {
-    title: `Oscar Jin (@Kinchan)`,
+    title: `Oscar Jin (Kinchan)`,
     description: `Portfolio website crafted by Oscar Jin. Known as 
     "Kinchan" among his friends, Oscar is an iOS / Web Developer who is also passionate about UI and UX Design. He can speak 4 different languages and loves to travel.`,
-    author: `Oscar Jin (@Kinchan)`,
+    author: `Oscar Jin (Kinchan)`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -45,7 +45,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Oscar Jin (@Kinchan) Portfolio`,
+        name: `Oscar Jin (Kinchan) Portfolio`,
         short_name: `Oscar Jin`,
         start_url: `/`,
         background_color: `#663399`,
