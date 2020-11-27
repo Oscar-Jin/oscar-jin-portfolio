@@ -1,9 +1,11 @@
 
 # Oscar Jin Portfolio Website
 
+Portfolio website crafted by Oscar Jin (Kinchan).
+
 ## Description
 
-This website is powered by Gatsby. It showcases my work and some other cool stuff. You can also view the website from here: [http://oscar-jin.surge.sh](http://oscar-jin.surge.sh)
+This website is powered by Gatsby. It showcases my work and some other cool stuff. You can view the website from here: [http://oscar-jin.surge.sh](http://oscar-jin.surge.sh)
 
 ## Badges
 
