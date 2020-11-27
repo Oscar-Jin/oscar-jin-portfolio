@@ -281,6 +281,27 @@ export default function Designs() {
           }
         }
       }
+      studentCenterUI: file(relativePath: { eq: "Student Center UI.png" }) {
+        childImageSharp {
+          fluid {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      lacoms: file(relativePath: { eq: "LACOMS.png" }) {
+        childImageSharp {
+          fluid {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      eme: file(relativePath: { eq: "EME 2019全国大会.png" }) {
+        childImageSharp {
+          fluid {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
     }
   `)
 

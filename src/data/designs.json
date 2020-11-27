@@ -47,6 +47,12 @@
       "title": "Unity Emblem Light",
       "category": "Sketch, Logo",
       "url": "https://www.dropbox.com/s/1iee8e2nqoubo9d/Unity%20Emblem%20Light.png?dl=0"
+    },
+    {
+      "imageName": "corporateLogo",
+      "title": "Corporate Logo",
+      "category": "Sketch, Logo",
+      "url": "https://www.dropbox.com/s/rn3bl9j82cy9zcp/Corporate%20Logo.png?dl=0"
     }
   ],
   "gallery": [
@@ -56,12 +62,7 @@
       "category": "Sketch, Poster",
       "url": "https://www.dropbox.com/s/pmj362jl03byqk9/Business%20Model.png?dl=0"
     },
-    {
-      "imageName": "corporateLogo",
-      "title": "Corporate Logo",
-      "category": "Sketch, Logo",
-      "url": "https://www.dropbox.com/s/rn3bl9j82cy9zcp/Corporate%20Logo.png?dl=0"
-    },
+
     {
       "imageName": "designerWonderland",
       "title": "Designer Wonderland",
@@ -147,6 +148,24 @@
       "title": "House Manual",
       "category": "Sketch, Cover, PDF",
       "url": "https://www.dropbox.com/s/yt0qmusx6i9fdp7/House%20Manual.pdf?dl=0"
+    },
+    {
+      "imageName": "studentCenterUI",
+      "title": "Student Center UI",
+      "category": "Sketch, UI",
+      "url": "https://www.dropbox.com/s/ytt0nnx6tco4vh9/Student%20Center%20UI.png?dl=0"
+    },
+    {
+      "imageName": "lacoms",
+      "title": "LACOMS",
+      "category": "Illustrator, Corporate Logo",
+      "url": "https://www.dropbox.com/s/3t2h9fo7j8dyexx/LACOMS.jpg?dl=0"
+    },
+    {
+      "imageName": "eme",
+      "title": "EME 2019全国大会",
+      "category": "InDesign, Booklet",
+      "url": "https://www.dropbox.com/s/aiuu3rqyvwpp0ur/EME%20%202019%E5%85%A8%E5%9B%BD%E5%A4%A7%E4%BC%9A%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%A0%E3%80%80%E5%85%A5%E7%A8%BF%E7%94%A8.pdf?dl=0"
     }
   ]
 }
