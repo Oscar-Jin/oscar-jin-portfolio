@@ -57,30 +57,46 @@
   ],
   "gallery": [
     {
-      "imageName": "businessModel",
-      "title": "Business Model",
-      "category": "Sketch, Poster",
-      "url": "https://www.dropbox.com/s/pmj362jl03byqk9/Business%20Model.png?dl=0"
-    },
-
-    {
       "imageName": "designerWonderland",
       "title": "Designer Wonderland",
-      "category": "Sketch, Concept",
+      "category": "Sketch, UI",
       "url": "https://www.dropbox.com/s/oibhuvw5h7ticmy/Designer%20Wonderland.png?dl=0"
     },
-    {
-      "imageName": "ikidaneJapanAd",
-      "title": "Ikidane Japan Ads",
-      "category": "Sketch, Ad",
-      "url": "https://www.dropbox.com/s/v9haysduycf7qkn/Ikidane%20Japan%20Ad.png?dl=0"
-    },
-
     {
       "imageName": "lacomsStudentUI",
       "title": "Lacoms Student UI",
       "category": "Sketch, UI",
       "url": "https://www.dropbox.com/s/lobd15b6z3uobm9/Lacoms%20Student%20UI.png?dl=0"
+    },
+    {
+      "imageName": "checkUI",
+      "title": "Check UI",
+      "category": "Sketch, UI",
+      "url": "https://www.dropbox.com/s/7fm7em2mmvetylu/Check%20UI.png?dl=0"
+    },
+    {
+      "imageName": "lacomsWorkSmart1",
+      "title": "Lacoms Work Smart 1",
+      "category": "Sketch, UI",
+      "url": "https://www.dropbox.com/s/ayylvhwj5vrflb3/LACOMS%20Work%20Smart%201.png?dl=0"
+    },
+    {
+      "imageName": "lacomsWorkSmart2",
+      "title": "Lacoms Work Smart 2",
+      "category": "Sketch, UI",
+      "url": "https://www.dropbox.com/s/ccm4tw84mad1bfs/Lacoms%20Work%20Smart%202.png?dl=0"
+    },
+    {
+      "imageName": "workspaceIcon",
+      "title": "WorkSpace Icon",
+      "category": "Sketch, UI",
+      "url": "https://www.dropbox.com/s/r0r5k5w5n9juy23/Workspace%20Icon.png?dl=0"
+    },
+    {
+      "imageName": "studentCenterUI",
+      "title": "Student Center UI",
+      "category": "Sketch, UI",
+      "url": "https://www.dropbox.com/s/ytt0nnx6tco4vh9/Student%20Center%20UI.png?dl=0"
     },
     {
       "imageName": "lessonUI",
@@ -94,7 +110,24 @@
       "category": "Sketch, UI",
       "url": "https://www.dropbox.com/s/1irswaw2i227tyn/Navigation%20UI.png?dl=0"
     },
-
+    {
+      "imageName": "businessModel",
+      "title": "Business Model",
+      "category": "Sketch, Poster",
+      "url": "https://www.dropbox.com/s/pmj362jl03byqk9/Business%20Model.png?dl=0"
+    },
+    {
+      "imageName": "ikidaneJapanAd",
+      "title": "Ikidane Japan Ads",
+      "category": "Sketch, Ad",
+      "url": "https://www.dropbox.com/s/v9haysduycf7qkn/Ikidane%20Japan%20Ad.png?dl=0"
+    },
+    {
+      "imageName": "lacoms",
+      "title": "LACOMS",
+      "category": "Illustrator, Corporate Logo",
+      "url": "https://www.dropbox.com/s/3t2h9fo7j8dyexx/LACOMS.jpg?dl=0"
+    },
     {
       "imageName": "nextWallpaper",
       "title": "Next Wallpaper",
@@ -122,19 +155,19 @@
     {
       "imageName": "lacomsSchedule",
       "title": "LACOMS 予定登録期間の変更",
-      "category": "Sketch, Flier",
+      "category": "Sketch, Flyer",
       "url": "https://www.dropbox.com/s/pm9fgox4v3ccmab/LACOMS%20%E4%BA%88%E5%AE%9A%E7%99%BB%E9%8C%B2%E6%9C%9F%E9%96%93%E3%81%AE%E5%A4%89%E6%9B%B4.pdf?dl=0"
     },
     {
       "imageName": "wiFiBreakdown",
       "title": "WiFi Breakdown",
-      "category": "Sketch, Flier, PDF",
+      "category": "Sketch, Flyer, PDF",
       "url": "https://www.dropbox.com/s/gdzaua42vzrv5nf/WiFi%20Breakdown.pdf?dl=0"
     },
     {
       "imageName": "changeClass",
       "title": "LACOMS 授業変更のご案内",
-      "category": "Sketch, Flier, PDF",
+      "category": "Sketch, Flyer, PDF",
       "url": "https://www.dropbox.com/s/6mxsp0tj4zbvbe6/%E6%8E%88%E6%A5%AD%E5%A4%89%E6%9B%B4%E3%81%AE%E3%81%94%E6%A1%88%E5%86%85.pdf?dl=0"
     },
     {
@@ -150,16 +183,22 @@
       "url": "https://www.dropbox.com/s/yt0qmusx6i9fdp7/House%20Manual.pdf?dl=0"
     },
     {
-      "imageName": "studentCenterUI",
-      "title": "Student Center UI",
-      "category": "Sketch, UI",
-      "url": "https://www.dropbox.com/s/ytt0nnx6tco4vh9/Student%20Center%20UI.png?dl=0"
+      "imageName": "ikidaneAppFlyer",
+      "title": "Ikidane App Flyer",
+      "category": "Sketch, Flyer, PDF",
+      "url": "https://www.dropbox.com/s/dqb7bchyuhpq36j/IKIDANE%20App%20Flyer.pdf?dl=0"
     },
     {
-      "imageName": "lacoms",
-      "title": "LACOMS",
-      "category": "Illustrator, Corporate Logo",
-      "url": "https://www.dropbox.com/s/3t2h9fo7j8dyexx/LACOMS.jpg?dl=0"
+      "imageName": "ikidaneCheckInGuide",
+      "title": "Ikidane CheckIn Guide",
+      "category": "Sketch, Manual, PDF",
+      "url": "https://www.dropbox.com/s/cggfy01b35adowd/IKIDANE%20Checkin%20Guide.pdf?dl=0"
+    },
+    {
+      "imageName": "ikidaneNavi",
+      "title": "Ikidane Navi",
+      "category": "Sketch, Manual, PDF",
+      "url": "https://www.dropbox.com/s/jgajw7yf81jx44e/IKIDANE%20Navi.pdf?dl=0"
     },
     {
       "imageName": "eme",

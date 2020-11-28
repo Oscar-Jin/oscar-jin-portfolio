@@ -3,7 +3,7 @@
     {
       "imageName": "portfolio",
       "title": "Oscar Jin Portfolio",
-      "category": "Gatsby, i18next",
+      "category": "Gatsby, i18next, GraphQL",
       "url": "http://oscar-jin.surge.sh",
       "repository": "https://github.com/Oscar-Jin/oscar-jin-portfolio"
     },

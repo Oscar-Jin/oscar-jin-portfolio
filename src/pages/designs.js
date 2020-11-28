@@ -302,6 +302,57 @@ export default function Designs() {
           }
         }
       }
+      checkUI: file(relativePath: { eq: "Check UI.png" }) {
+        childImageSharp {
+          fluid {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      lacomsWorkSmart1: file(relativePath: { eq: "LACOMS Work Smart 1.png" }) {
+        childImageSharp {
+          fluid {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      lacomsWorkSmart2: file(relativePath: { eq: "Lacoms Work Smart 2.png" }) {
+        childImageSharp {
+          fluid {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      workspaceIcon: file(relativePath: { eq: "Workspace Icon.png" }) {
+        childImageSharp {
+          fluid {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      ikidaneAppFlyer: file(relativePath: { eq: "IKIDANE App Flyer.png" }) {
+        childImageSharp {
+          fluid {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      ikidaneCheckInGuide: file(
+        relativePath: { eq: "IKIDANE CheckIn Guide.png" }
+      ) {
+        childImageSharp {
+          fluid {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      ikidaneNavi: file(relativePath: { eq: "IKIDANE Navi.png" }) {
+        childImageSharp {
+          fluid {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
     }
   `)
 
